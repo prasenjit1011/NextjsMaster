@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
           height={37}
           priority
         />
+        <Link href="/aboutus">About Us</Link>
     </main>
   );
 }
