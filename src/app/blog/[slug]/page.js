@@ -5,7 +5,7 @@ export default function UserBlogPage({params}){
     console.log(789)
     return (
         <main className={styles.main}>
-            <h3>Blog {params.slug}</h3>
+            <h3>Blog Details Page {params.slug}</h3>
             <Link href="/">Home</Link>
         </main>
     )

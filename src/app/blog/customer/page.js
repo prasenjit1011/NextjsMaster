@@ -4,7 +4,7 @@ import styles from "../../page.module.css";
 export default function UserBlogPage(){
     return (
         <main className={styles.main}>
-            <h3>Customer Blog [XXX]</h3>
+            <h3>Blog Customer Page</h3>
             <Link href="/">Home</Link>
         </main>
     )
