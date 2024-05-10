@@ -15,12 +15,13 @@ export default function Header(){
                 height={25}
                 priority
             /> &nbsp; &nbsp; &nbsp; 
-            <Link href="/">Home</Link> &nbsp;
-            <Link href="/aboutus">About Us</Link> &nbsp;
-            <Link href="/blog">Blog</Link> &nbsp;
-            <Link href="/blog/customer">Customer</Link> &nbsp;
-            <Link href="/blog/one">Blog1</Link> &nbsp;
-            <Link href="/blog/two">Blog2</Link> &nbsp;
+            <Link href="/">Home</Link> &nbsp;| &nbsp;
+            <Link href="/aboutus">About Us</Link> &nbsp;| &nbsp;
+            <Link href="/blog">Blog</Link> &nbsp;| &nbsp;
+            <Link href="/blog/customer">Customer</Link> &nbsp;| &nbsp;
+            <Link href="/blog/one">Blog1</Link> &nbsp;| &nbsp;
+            <Link href="/blog/two">Blog2</Link> &nbsp;| &nbsp;
+            <Link href="/stockdata">Stock Data</Link> &nbsp;
         </div>
     );
 }
