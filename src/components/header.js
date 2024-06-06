@@ -17,6 +17,8 @@ export default function Header(){
             /> &nbsp; &nbsp; &nbsp; 
             <Link href="/">Home</Link> &nbsp;| &nbsp;
             <Link href="/aboutus">About Us</Link> &nbsp;| &nbsp;
+            <Link href="/contactus">Contact Us</Link> &nbsp;| &nbsp;
+            <Link href="/hotels">Hotels</Link> &nbsp;| &nbsp;
             <Link href="/blog">Blog</Link> &nbsp;| &nbsp;
             <Link href="/blog/customer">Customer</Link> &nbsp;| &nbsp;
             <Link href="/blog/one">Blog1</Link> &nbsp;| &nbsp;
