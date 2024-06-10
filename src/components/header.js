@@ -18,12 +18,13 @@ export default function Header(){
             <Link href="/">Home</Link> &nbsp;| &nbsp;
             <Link href="/aboutus">About Us</Link> &nbsp;| &nbsp;
             <Link href="/contactus">Contact Us</Link> &nbsp;| &nbsp;
-            <Link href="/hotels">Hotels</Link> &nbsp;| &nbsp;
-            <Link href="/blog">Blog</Link> &nbsp;| &nbsp;
-            <Link href="/blog/customer">Customer</Link> &nbsp;| &nbsp;
-            <Link href="/blog/one">Blog1</Link> &nbsp;| &nbsp;
-            <Link href="/blog/two">Blog2</Link> &nbsp;| &nbsp;
-            <Link href="/stockdata">Stock Data</Link> &nbsp;
+            <Link href="/hotels">Hotels</Link> &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp;
+
+            <Link href="/accounts/login">Accounts</Link> &nbsp;| &nbsp; &nbsp; &nbsp;
+            
+            <Link href="/user">Profile</Link> &nbsp;| &nbsp;
+            <Link href="/user/wishlist">Customer</Link> &nbsp;| &nbsp;
+            <Link href="/notfound">404 Page</Link> &nbsp;| &nbsp;
         </div>
     );
 }

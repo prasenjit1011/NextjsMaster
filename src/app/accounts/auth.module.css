@@ -1,0 +1,57 @@
+.authLeftSide{
+    float: left;
+    color: #cfa56e;
+    background-color: #00F;
+    width: 40%;
+    padding: 5px;
+    border:1px solid #00F;
+    height:100vh;
+    text-align: center;
+}
+.logo{
+    width: 300px;
+    height: 400px;
+}
+
+.authRightSide{
+    float: left;
+    color: #00F;
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #080;
+    height:100vh;
+    text-align: center;
+}
+
+.authPage input[type=text], .authPage input[type=email], .authPage input[type=password], .authPage textarea{
+    height: 40px;
+    font-size: larger;
+    width: 40%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #cfa56e;
+}
+
+.authPage textarea{
+    width: 80%;
+    row-gap: 5px;
+}
+
+.authPage input[type=submit]{
+    height: 40px;
+    font-size: larger;
+    width: 30%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #cfa56e;
+    cursor: pointer;
+}
+.policy{
+    color: #271f1f;
+}
+
+.contactDetails{
+    text-align: left !important;
+}

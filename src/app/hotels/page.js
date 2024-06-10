@@ -6,14 +6,18 @@ import "react-datepicker/dist/react-datepicker.css";
 
 export default function HotelListPage(){
 
-    //const apiURL = 'https://gh4csx-3000.csb.app/api/hotels/list/';
-    const apiHost   = 'http://localhost:3000/';
+    const apiHost = 'https://gh4csx-3000.csb.app/';
+    //const apiHost   = 'http://localhost:3000/';
     const apiURL    = apiHost + 'api/hotels/list/';
     const [data, setData]   = useState([]);
 
     useEffect(()=>{
-
-        fetch(apiURL)
+        fetch(apiURL,{
+            mode:'cors',
+            headers:{
+                'Content-Type':'application/json'
+            }
+        })
         .then((res)=>res.json())
         .then((result)=>{
             //console.log(result);
