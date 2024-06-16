@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
 
 
 
-        
+            <AllComponent />
 
             
 
@@ -51,4 +51,12 @@ export default function RootLayout({ children }) {
     </html>
   
   );
+}
+
+
+
+function AllComponent(){
+    return (
+        <h1>Hello</h1>
+    );
 }
