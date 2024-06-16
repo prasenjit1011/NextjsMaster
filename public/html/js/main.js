@@ -1,6 +1,7 @@
 (function ($) {
     "use strict";
 
+    console.log(111111111111111);
     // Spinner
     var spinner = function () {
         setTimeout(function () {
@@ -111,22 +112,23 @@
         }
     });
 
-
+    console.log(22222222222222222);
     // Modal Video
     $(document).ready(function () {
         var $videoSrc;
-        $('.btn-play').click(function () {
-            $videoSrc = $(this).data("src");
-        });
-        console.log($videoSrc);
+        // $('.btn-play').click(function () {
+        //     $videoSrc = $(this).data("src");
+        // });
+        // console.log($videoSrc);
 
-        $('#videoModal').on('shown.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-        })
+        // $('#videoModal').on('shown.bs.modal', function (e) {
+        //     $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+        // })
 
-        $('#videoModal').on('hide.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc);
-        })
+        // $('#videoModal').on('hide.bs.modal', function (e) {
+        //     $("#video").attr('src', $videoSrc);
+        // })
+        console.log(333333333333);
     });
 
 
