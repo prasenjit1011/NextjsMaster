@@ -62,7 +62,7 @@ export default function HotelDetailsPage({params}){
                         <br />
                         <br />
                         <p>
-                            <Link href={ "/hotels/"+hotelId+"/reviews"} className={styles.readmore}>User's Review</Link>
+                            <Link href={ "/hotels/"+hotelId+"/reviews"} className={styles.readmore}>Users Review</Link>
                             <Link href={ "/hotels"} className={styles.readmore} style={{float:"right"}} >Back To Hotel List</Link>
                         </p>
                     </div>
