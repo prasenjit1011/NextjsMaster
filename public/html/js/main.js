@@ -80,7 +80,7 @@
 
 
     // vegetable carousel
-    $(".vegetable-carousel").owlCarousel({
+    $(".zvegetable-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1500,
         center: false,
