@@ -76,7 +76,7 @@ function App() {
     console.log(e.target.name);
     console.log(e.target.value);
     console.log(frmdata);
-    console.log('----------------------------------');
+    console.log('------------------------------');
   }
 
   const src = `http://localhost:3000/`+frmdata.imgSrc;
