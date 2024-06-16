@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
         <meta content="" name="description" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com"  crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet" precedence="default" /> 
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" precedence="default"/>
@@ -30,12 +30,9 @@ export default function RootLayout({ children }) {
         <link href="html/css/bootstrap.min.css" rel="stylesheet" precedence="default" />
 
         <link href="html/css/style.css" rel="stylesheet" precedence="default" />
-        <link rel="icon" type="image/x-icon" href="html/img/bag.png" />
+        <link rel="icon" type="image/x-icon" href="/html/img/bag.png" />
         <body >
 
-        <div id="spinner" className="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
-            <div className="spinner-grow text-primary" role="status"></div>
-        </div>
 
 
         <div className="container-fluid fixed-top">
@@ -88,16 +85,6 @@ export default function RootLayout({ children }) {
                 </nav>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -562,6 +549,7 @@ export default function RootLayout({ children }) {
             <div className="container py-5">
                 <h1 className="mb-0">Fresh Organic Vegetables</h1>
                 <div className="owl-carousel vegetable-carousel justify-content-center">
+
                     <div className="border border-primary rounded position-relative vesitable-item">
                         <div className="vesitable-img">
                             <img src="html/img/vegetable-item-6.jpg" className="img-fluid w-100 rounded-top" alt="" />
@@ -1169,21 +1157,16 @@ export default function RootLayout({ children }) {
             </div>
         </div>
 
-            {children}
+            
 
             <a href="#" className="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i className="fa fa-arrow-up"></i></a>   
-
-        
-
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="html/lib/easing/easing.min.js"></script>
-<script src="html/lib/waypoints/waypoints.min.js"></script>
-<script src="html/lib/lightbox/js/lightbox.min.js"></script>
-<script src="html/lib/owlcarousel/owl.carousel.min.js"></script>
-
-<script src="html/js/main.js"></script>
-
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="html/lib/easing/easing.min.js"></script>
+            <script src="html/lib/waypoints/waypoints.min.js"></script>
+            <script src="html/lib/lightbox/js/lightbox.min.js"></script>
+            <script src="html/lib/owlcarousel/owl.carousel.min.js"></script>
+            <script src="html/js/main.js"></script>
         </body>
     </html>
   
