@@ -10,29 +10,34 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-        <meta charSet="utf-8" />
+    
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
         <title>Fruitables - Vegetable Website Template</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta content="" name="keywords" />
         <meta content="" name="description" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet" precedence="default" /> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet" /> 
 
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" precedence="default"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" precedence="default" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
 
-        <link href="html/lib/lightbox/css/lightbox.min.css" rel="stylesheet" precedence="default" />
-        <link href="html/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" precedence="default" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-        <link href="html/css/bootstrap.min.css" rel="stylesheet" precedence="default" />
+        <link href="css/style.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="img/bag.png" />
+    </head>
 
-        <link href="html/css/style.css" rel="stylesheet" precedence="default" />
-        <link rel="icon" type="image/x-icon" href="html/img/bag.png" />
-        <body >
+    <body className={inter.className}>
 
         <div id="spinner" className="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
             <div className="spinner-grow text-primary" role="status"></div>
@@ -79,7 +84,7 @@ export default function RootLayout({ children }) {
                             <button className="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i className="fas fa-search text-primary"></i></button>
                             <a href="#" className="position-relative me-4 my-auto">
                                 <i className="fa fa-shopping-bag fa-2x"></i>
-                                <span className="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style={{top:"-5px", left:"15px", height:" 20px", minWidth:" 20px"}} >3</span>
+                                <span className="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style={{top: "-5px", left: "15px", height: "20px", minWidth: "20px"}}>3</span>
                             </a>
                             <a href="#" className="my-auto">
                                 <i className="fas fa-user fa-2x"></i>
@@ -91,18 +96,7 @@ export default function RootLayout({ children }) {
         </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-        <div className="modal fade" id="searchModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div className="modal-dialog modal-fullscreen">
                 <div className="modal-content rounded-0">
                     <div className="modal-header">
@@ -1169,24 +1163,24 @@ export default function RootLayout({ children }) {
                 </div>
             </div>
         </div>
+        
+        {children}
 
-            {children}
 
-            <a href="#" className="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i className="fa fa-arrow-up"></i></a>   
+        <a href="#" className="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i className="fa fa-arrow-up"></i></a>   
 
         
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="html/lib/easing/easing.min.js"></script>
+    <script src="html/lib/waypoints/waypoints.min.js"></script>
+    <script src="html/lib/lightbox/js/lightbox.min.js"></script>
+    <script src="html/lib/owlcarousel/owl.carousel.min.js"></script>
 
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="html/lib/easing/easing.min.js"></script>
-<script src="html/lib/waypoints/waypoints.min.js"></script>
-<script src="html/lib/lightbox/js/lightbox.min.js"></script>
-<script src="html/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="html/js/main.js"></script>
+    </body>
 
-<script src="html/js/main.js"></script>
-
-        </body>
-    </html>
+</html>
   
   );
 }

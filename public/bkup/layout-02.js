@@ -10,29 +10,34 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-        <meta charSet="utf-8" />
+    
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
         <title>Fruitables - Vegetable Website Template</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta content="" name="keywords" />
         <meta content="" name="description" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet" precedence="default" /> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet" /> 
 
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" precedence="default"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" precedence="default" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
 
-        <link href="html/lib/lightbox/css/lightbox.min.css" rel="stylesheet" precedence="default" />
-        <link href="html/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" precedence="default" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-        <link href="html/css/bootstrap.min.css" rel="stylesheet" precedence="default" />
+        <link href="css/style.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="img/bag.png" />
+    </head>
 
-        <link href="html/css/style.css" rel="stylesheet" precedence="default" />
-        <link rel="icon" type="image/x-icon" href="html/img/bag.png" />
-        <body >
+    <body className={inter.className}>
 
         <div id="spinner" className="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
             <div className="spinner-grow text-primary" role="status"></div>
@@ -79,7 +84,7 @@ export default function RootLayout({ children }) {
                             <button className="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i className="fas fa-search text-primary"></i></button>
                             <a href="#" className="position-relative me-4 my-auto">
                                 <i className="fa fa-shopping-bag fa-2x"></i>
-                                <span className="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style={{top:"-5px", left:"15px", height:" 20px", minWidth:" 20px"}} >3</span>
+                                <span className="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style={{top: "-5px", left: "15px", height: "20px", minWidth: "20px"}}>3</span>
                             </a>
                             <a href="#" className="my-auto">
                                 <i className="fas fa-user fa-2x"></i>
@@ -91,18 +96,7 @@ export default function RootLayout({ children }) {
         </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-        <div className="modal fade" id="searchModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div className="modal-dialog modal-fullscreen">
                 <div className="modal-content rounded-0">
                     <div className="modal-header">
@@ -135,11 +129,11 @@ export default function RootLayout({ children }) {
                         <div id="carouselId" className="carousel slide position-relative" data-bs-ride="carousel">
                             <div className="carousel-inner" role="listbox">
                                 <div className="carousel-item active rounded">
-                                    <img src="html/img/hero-img-1.png" className="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide" />
+                                    <img src="img/hero-img-1.png" className="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide" />
                                     <a href="#" className="btn px-4 py-2 text-white rounded">Fruites</a>
                                 </div>
                                 <div className="carousel-item rounded">
-                                    <img src="html/img/hero-img-2.jpg" className="img-fluid w-100 h-100 rounded" alt="Second slide" />
+                                    <img src="img/hero-img-2.jpg" className="img-fluid w-100 h-100 rounded" alt="Second slide" />
                                     <a href="#" className="btn px-4 py-2 text-white rounded">Vesitables</a>
                                 </div>
                             </div>
@@ -203,7 +197,7 @@ export default function RootLayout({ children }) {
                                         <div className="col-md-6 col-lg-4 col-xl-3">
                                             <div className="rounded position-relative fruite-item">
                                                 <div className="fruite-img">
-                                                    <img src="html/img/fruite-item-5.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                                                    <img src="img/fruite-item-5.jpg" className="img-fluid w-100 rounded-top" alt="" />
                                                 </div>
                                                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
                                                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -219,7 +213,7 @@ export default function RootLayout({ children }) {
                                         <div className="col-md-6 col-lg-4 col-xl-3">
                                             <div className="rounded position-relative fruite-item">
                                                 <div className="fruite-img">
-                                                    <img src="html/img/fruite-item-5.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                                                    <img src="img/fruite-item-5.jpg" className="img-fluid w-100 rounded-top" alt="" />
                                                 </div>
                                                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
                                                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -235,7 +229,7 @@ export default function RootLayout({ children }) {
                                         <div className="col-md-6 col-lg-4 col-xl-3">
                                             <div className="rounded position-relative fruite-item">
                                                 <div className="fruite-img">
-                                                    <img src="html/img/fruite-item-2.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                                                    <img src="img/fruite-item-2.jpg" className="img-fluid w-100 rounded-top" alt="" />
                                                 </div>
                                                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
                                                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -251,7 +245,7 @@ export default function RootLayout({ children }) {
                                         <div className="col-md-6 col-lg-4 col-xl-3">
                                             <div className="rounded position-relative fruite-item">
                                                 <div className="fruite-img">
-                                                    <img src="html/img/fruite-item-4.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                                                    <img src="img/fruite-item-4.jpg" className="img-fluid w-100 rounded-top" alt="" />
                                                 </div>
                                                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
                                                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -267,7 +261,7 @@ export default function RootLayout({ children }) {
                                         <div className="col-md-6 col-lg-4 col-xl-3">
                                             <div className="rounded position-relative fruite-item">
                                                 <div className="fruite-img">
-                                                    <img src="html/img/fruite-item-3.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                                                    <img src="img/fruite-item-3.jpg" className="img-fluid w-100 rounded-top" alt="" />
                                                 </div>
                                                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
                                                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -283,7 +277,7 @@ export default function RootLayout({ children }) {
                                         <div className="col-md-6 col-lg-4 col-xl-3">
                                             <div className="rounded position-relative fruite-item">
                                                 <div className="fruite-img">
-                                                    <img src="html/img/fruite-item-1.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                                                    <img src="img/fruite-item-1.jpg" className="img-fluid w-100 rounded-top" alt="" />
                                                 </div>
                                                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
                                                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -299,7 +293,7 @@ export default function RootLayout({ children }) {
                                         <div className="col-md-6 col-lg-4 col-xl-3">
                                             <div className="rounded position-relative fruite-item">
                                                 <div className="fruite-img">
-                                                    <img src="html/img/fruite-item-2.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                                                    <img src="img/fruite-item-2.jpg" className="img-fluid w-100 rounded-top" alt="" />
                                                 </div>
                                                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
                                                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -315,7 +309,7 @@ export default function RootLayout({ children }) {
                                         <div className="col-md-6 col-lg-4 col-xl-3">
                                             <div className="rounded position-relative fruite-item">
                                                 <div className="fruite-img">
-                                                    <img src="html/img/fruite-item-5.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                                                    <img src="img/fruite-item-5.jpg" className="img-fluid w-100 rounded-top" alt="" />
                                                 </div>
                                                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
                                                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -339,7 +333,7 @@ export default function RootLayout({ children }) {
                                         <div className="col-md-6 col-lg-4 col-xl-3">
                                             <div className="rounded position-relative fruite-item">
                                                 <div className="fruite-img">
-                                                    <img src="html/img/fruite-item-5.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                                                    <img src="img/fruite-item-5.jpg" className="img-fluid w-100 rounded-top" alt="" />
                                                 </div>
                                                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
                                                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -355,7 +349,7 @@ export default function RootLayout({ children }) {
                                         <div className="col-md-6 col-lg-4 col-xl-3">
                                             <div className="rounded position-relative fruite-item">
                                                 <div className="fruite-img">
-                                                    <img src="html/img/fruite-item-2.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                                                    <img src="img/fruite-item-2.jpg" className="img-fluid w-100 rounded-top" alt="" />
                                                 </div>
                                                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
                                                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -379,7 +373,7 @@ export default function RootLayout({ children }) {
                                         <div className="col-md-6 col-lg-4 col-xl-3">
                                             <div className="rounded position-relative fruite-item">
                                                 <div className="fruite-img">
-                                                    <img src="html/img/fruite-item-1.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                                                    <img src="img/fruite-item-1.jpg" className="img-fluid w-100 rounded-top" alt="" />
                                                 </div>
                                                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
                                                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -395,7 +389,7 @@ export default function RootLayout({ children }) {
                                         <div className="col-md-6 col-lg-4 col-xl-3">
                                             <div className="rounded position-relative fruite-item">
                                                 <div className="fruite-img">
-                                                    <img src="html/img/fruite-item-6.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                                                    <img src="img/fruite-item-6.jpg" className="img-fluid w-100 rounded-top" alt="" />
                                                 </div>
                                                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
                                                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -419,7 +413,7 @@ export default function RootLayout({ children }) {
                                         <div className="col-md-6 col-lg-4 col-xl-3">
                                             <div className="rounded position-relative fruite-item">
                                                 <div className="fruite-img">
-                                                    <img src="html/img/fruite-item-5.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                                                    <img src="img/fruite-item-5.jpg" className="img-fluid w-100 rounded-top" alt="" />
                                                 </div>
                                                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
                                                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -435,7 +429,7 @@ export default function RootLayout({ children }) {
                                         <div className="col-md-6 col-lg-4 col-xl-3">
                                             <div className="rounded position-relative fruite-item">
                                                 <div className="fruite-img">
-                                                    <img src="html/img/fruite-item-4.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                                                    <img src="img/fruite-item-4.jpg" className="img-fluid w-100 rounded-top" alt="" />
                                                 </div>
                                                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
                                                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -459,7 +453,7 @@ export default function RootLayout({ children }) {
                                         <div className="col-md-6 col-lg-4 col-xl-3">
                                             <div className="rounded position-relative fruite-item">
                                                 <div className="fruite-img">
-                                                    <img src="html/img/fruite-item-3.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                                                    <img src="img/fruite-item-3.jpg" className="img-fluid w-100 rounded-top" alt="" />
                                                 </div>
                                                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
                                                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -475,7 +469,7 @@ export default function RootLayout({ children }) {
                                         <div className="col-md-6 col-lg-4 col-xl-3">
                                             <div className="rounded position-relative fruite-item">
                                                 <div className="fruite-img">
-                                                    <img src="html/img/fruite-item-2.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                                                    <img src="img/fruite-item-2.jpg" className="img-fluid w-100 rounded-top" alt="" />
                                                 </div>
                                                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
                                                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -491,7 +485,7 @@ export default function RootLayout({ children }) {
                                         <div className="col-md-6 col-lg-4 col-xl-3">
                                             <div className="rounded position-relative fruite-item">
                                                 <div className="fruite-img">
-                                                    <img src="html/img/fruite-item-1.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                                                    <img src="img/fruite-item-1.jpg" className="img-fluid w-100 rounded-top" alt="" />
                                                 </div>
                                                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
                                                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -519,7 +513,7 @@ export default function RootLayout({ children }) {
                     <div className="col-md-6 col-lg-4">
                         <a href="#">
                             <div className="service-item bg-secondary rounded border border-secondary">
-                                <img src="html/img/featur-1.jpg" className="img-fluid rounded-top w-100" alt="" />
+                                <img src="img/featur-1.jpg" className="img-fluid rounded-top w-100" alt="" />
                                 <div className="px-4 rounded-bottom">
                                     <div className="service-content bg-primary text-center p-4 rounded">
                                         <h5 className="text-white">Fresh Apples</h5>
@@ -532,7 +526,7 @@ export default function RootLayout({ children }) {
                     <div className="col-md-6 col-lg-4">
                         <a href="#">
                             <div className="service-item bg-dark rounded border border-dark">
-                                <img src="html/img/featur-2.jpg" className="img-fluid rounded-top w-100" alt="" />
+                                <img src="img/featur-2.jpg" className="img-fluid rounded-top w-100" alt="" />
                                 <div className="px-4 rounded-bottom">
                                     <div className="service-content bg-light text-center p-4 rounded">
                                         <h5 className="text-primary">Tasty Fruits</h5>
@@ -545,7 +539,7 @@ export default function RootLayout({ children }) {
                     <div className="col-md-6 col-lg-4">
                         <a href="#">
                             <div className="service-item bg-primary rounded border border-primary">
-                                <img src="html/img/featur-3.jpg" className="img-fluid rounded-top w-100" alt="" />
+                                <img src="img/featur-3.jpg" className="img-fluid rounded-top w-100" alt="" />
                                 <div className="px-4 rounded-bottom">
                                     <div className="service-content bg-secondary text-center p-4 rounded">
                                         <h5 className="text-white">Exotic Vegitable</h5>
@@ -565,7 +559,7 @@ export default function RootLayout({ children }) {
                 <div className="owl-carousel vegetable-carousel justify-content-center">
                     <div className="border border-primary rounded position-relative vesitable-item">
                         <div className="vesitable-img">
-                            <img src="html/img/vegetable-item-6.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                            <img src="img/vegetable-item-6.jpg" className="img-fluid w-100 rounded-top" alt="" />
                         </div>
                         <div className="text-white bg-primary px-3 py-1 rounded position-absolute" style={{top: "10px", right: "10px"}}>Vegetable</div>
                         <div className="p-4 rounded-bottom">
@@ -579,7 +573,7 @@ export default function RootLayout({ children }) {
                     </div>
                     <div className="border border-primary rounded position-relative vesitable-item">
                         <div className="vesitable-img">
-                            <img src="html/img/vegetable-item-1.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                            <img src="img/vegetable-item-1.jpg" className="img-fluid w-100 rounded-top" alt="" />
                         </div>
                         <div className="text-white bg-primary px-3 py-1 rounded position-absolute" style={{top: "10px", right: "10px"}}>Vegetable</div>
                         <div className="p-4 rounded-bottom">
@@ -593,7 +587,7 @@ export default function RootLayout({ children }) {
                     </div>
                     <div className="border border-primary rounded position-relative vesitable-item">
                         <div className="vesitable-img">
-                            <img src="html/img/vegetable-item-3.png" className="img-fluid w-100 rounded-top bg-light" alt="" />
+                            <img src="img/vegetable-item-3.png" className="img-fluid w-100 rounded-top bg-light" alt="" />
                         </div>
                         <div className="text-white bg-primary px-3 py-1 rounded position-absolute" style={{top: "10px", right: "10px"}}>Vegetable</div>
                         <div className="p-4 rounded-bottom">
@@ -607,7 +601,7 @@ export default function RootLayout({ children }) {
                     </div>
                     <div className="border border-primary rounded position-relative vesitable-item">
                         <div className="vesitable-img">
-                            <img src="html/img/vegetable-item-4.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                            <img src="img/vegetable-item-4.jpg" className="img-fluid w-100 rounded-top" alt="" />
                         </div>
                         <div className="text-white bg-primary px-3 py-1 rounded position-absolute" style={{top: "10px", right: "10px"}}>Vegetable</div>
                         <div className="p-4 rounded-bottom">
@@ -621,7 +615,7 @@ export default function RootLayout({ children }) {
                     </div>
                     <div className="border border-primary rounded position-relative vesitable-item">
                         <div className="vesitable-img">
-                            <img src="html/img/vegetable-item-5.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                            <img src="img/vegetable-item-5.jpg" className="img-fluid w-100 rounded-top" alt="" />
                         </div>
                         <div className="text-white bg-primary px-3 py-1 rounded position-absolute" style={{top: "10px", right: "10px"}}>Vegetable</div>
                         <div className="p-4 rounded-bottom">
@@ -635,7 +629,7 @@ export default function RootLayout({ children }) {
                     </div>
                     <div className="border border-primary rounded position-relative vesitable-item">
                         <div className="vesitable-img">
-                            <img src="html/img/vegetable-item-6.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                            <img src="img/vegetable-item-6.jpg" className="img-fluid w-100 rounded-top" alt="" />
                         </div>
                         <div className="text-white bg-primary px-3 py-1 rounded position-absolute" style={{top: "10px", right: "10px"}}>Vegetable</div>
                         <div className="p-4 rounded-bottom">
@@ -649,7 +643,7 @@ export default function RootLayout({ children }) {
                     </div>
                     <div className="border border-primary rounded position-relative vesitable-item">
                         <div className="vesitable-img">
-                            <img src="html/img/vegetable-item-5.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                            <img src="img/vegetable-item-5.jpg" className="img-fluid w-100 rounded-top" alt="" />
                         </div>
                         <div className="text-white bg-primary px-3 py-1 rounded position-absolute" style={{top: "10px", right: "10px"}}>Vegetable</div>
                         <div className="p-4 rounded-bottom">
@@ -663,7 +657,7 @@ export default function RootLayout({ children }) {
                     </div>
                     <div className="border border-primary rounded position-relative vesitable-item">
                         <div className="vesitable-img">
-                            <img src="html/img/vegetable-item-6.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                            <img src="img/vegetable-item-6.jpg" className="img-fluid w-100 rounded-top" alt="" />
                         </div>
                         <div className="text-white bg-primary px-3 py-1 rounded position-absolute" style={{top: "10px", right: "10px"}}>Vegetable</div>
                         <div className="p-4 rounded-bottom">
@@ -692,7 +686,7 @@ export default function RootLayout({ children }) {
                     </div>
                     <div className="col-lg-6">
                         <div className="position-relative">
-                            <img src="html/img/baner-1.png" className="img-fluid w-100 rounded" alt="" />
+                            <img src="img/baner-1.png" className="img-fluid w-100 rounded" alt="" />
                             <div className="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute" style={{width: "140px", height: "140px", top: "0", left: "0"}}>
                                 <h1 style={{fontSize: "100px"}}>1</h1>
                                 <div className="d-flex flex-column">
@@ -717,7 +711,7 @@ export default function RootLayout({ children }) {
                         <div className="p-4 rounded bg-light">
                             <div className="row align-items-center">
                                 <div className="col-6">
-                                    <img src="html/img/best-product-1.jpg" className="img-fluid rounded-circle w-100" alt="" />
+                                    <img src="img/best-product-1.jpg" className="img-fluid rounded-circle w-100" alt="" />
                                 </div>
                                 <div className="col-6">
                                     <a href="#" className="h5">Organic Tomato</a>
@@ -738,7 +732,7 @@ export default function RootLayout({ children }) {
                         <div className="p-4 rounded bg-light">
                             <div className="row align-items-center">
                                 <div className="col-6">
-                                    <img src="html/img/best-product-2.jpg" className="img-fluid rounded-circle w-100" alt="" />
+                                    <img src="img/best-product-2.jpg" className="img-fluid rounded-circle w-100" alt="" />
                                 </div>
                                 <div className="col-6">
                                     <a href="#" className="h5">Organic Tomato</a>
@@ -759,7 +753,7 @@ export default function RootLayout({ children }) {
                         <div className="p-4 rounded bg-light">
                             <div className="row align-items-center">
                                 <div className="col-6">
-                                    <img src="html/img/best-product-3.jpg" className="img-fluid rounded-circle w-100" alt="" />
+                                    <img src="img/best-product-3.jpg" className="img-fluid rounded-circle w-100" alt="" />
                                 </div>
                                 <div className="col-6">
                                     <a href="#" className="h5">Organic Tomato</a>
@@ -780,7 +774,7 @@ export default function RootLayout({ children }) {
                         <div className="p-4 rounded bg-light">
                             <div className="row align-items-center">
                                 <div className="col-6">
-                                    <img src="html/img/best-product-4.jpg" className="img-fluid rounded-circle w-100" alt="" />
+                                    <img src="img/best-product-4.jpg" className="img-fluid rounded-circle w-100" alt="" />
                                 </div>
                                 <div className="col-6">
                                     <a href="#" className="h5">Organic Tomato</a>
@@ -801,7 +795,7 @@ export default function RootLayout({ children }) {
                         <div className="p-4 rounded bg-light">
                             <div className="row align-items-center">
                                 <div className="col-6">
-                                    <img src="html/img/best-product-5.jpg" className="img-fluid rounded-circle w-100" alt="" />
+                                    <img src="img/best-product-5.jpg" className="img-fluid rounded-circle w-100" alt="" />
                                 </div>
                                 <div className="col-6">
                                     <a href="#" className="h5">Organic Tomato</a>
@@ -822,7 +816,7 @@ export default function RootLayout({ children }) {
                         <div className="p-4 rounded bg-light">
                             <div className="row align-items-center">
                                 <div className="col-6">
-                                    <img src="html/img/best-product-6.jpg" className="img-fluid rounded-circle w-100" alt="" />
+                                    <img src="img/best-product-6.jpg" className="img-fluid rounded-circle w-100" alt="" />
                                 </div>
                                 <div className="col-6">
                                     <a href="#" className="h5">Organic Tomato</a>
@@ -841,7 +835,7 @@ export default function RootLayout({ children }) {
                     </div>
                     <div className="col-md-6 col-lg-6 col-xl-3">
                         <div className="text-center">
-                            <img src="html/img/fruite-item-1.jpg" className="img-fluid rounded" alt="" />
+                            <img src="img/fruite-item-1.jpg" className="img-fluid rounded" alt="" />
                             <div className="py-4">
                                 <a href="#" className="h5">Organic Tomato</a>
                                 <div className="d-flex my-3 justify-content-center">
@@ -858,7 +852,7 @@ export default function RootLayout({ children }) {
                     </div>
                     <div className="col-md-6 col-lg-6 col-xl-3">
                         <div className="text-center">
-                            <img src="html/img/fruite-item-2.jpg" className="img-fluid rounded" alt="" />
+                            <img src="img/fruite-item-2.jpg" className="img-fluid rounded" alt="" />
                             <div className="py-4">
                                 <a href="#" className="h5">Organic Tomato</a>
                                 <div className="d-flex my-3 justify-content-center">
@@ -875,7 +869,7 @@ export default function RootLayout({ children }) {
                     </div>
                     <div className="col-md-6 col-lg-6 col-xl-3">
                         <div className="text-center">
-                            <img src="html/img/fruite-item-3.jpg" className="img-fluid rounded" alt="" />
+                            <img src="img/fruite-item-3.jpg" className="img-fluid rounded" alt="" />
                             <div className="py-4">
                                 <a href="#" className="h5">Organic Tomato</a>
                                 <div className="d-flex my-3 justify-content-center">
@@ -892,7 +886,7 @@ export default function RootLayout({ children }) {
                     </div>
                     <div className="col-md-6 col-lg-6 col-xl-3">
                         <div className="text-center">
-                            <img src="html/img/fruite-item-4.jpg" className="img-fluid rounded" alt="" />
+                            <img src="img/fruite-item-4.jpg" className="img-fluid rounded" alt="" />
                             <div className="py-2">
                                 <a href="#" className="h5">Organic Tomato</a>
                                 <div className="d-flex my-3 justify-content-center">
@@ -964,7 +958,7 @@ export default function RootLayout({ children }) {
                             </div>
                             <div className="d-flex align-items-center flex-nowrap">
                                 <div className="bg-secondary rounded">
-                                    <img src="html/img/testimonial-2.jpg" className="img-fluid rounded" style={{width: "100px", height: "100px"}} alt="" />
+                                    <img src="img/testimonial-2.jpg" className="img-fluid rounded" style={{width: "100px", height: "100px"}} alt="" />
                                 </div>
                                 <div className="ms-4 d-block">
                                     <h4 className="text-dark">Client Name</h4>
@@ -989,7 +983,7 @@ export default function RootLayout({ children }) {
                             </div>
                             <div className="d-flex align-items-center flex-nowrap">
                                 <div className="bg-secondary rounded">
-                                    <img src="html/img/testimonial-1.jpg" className="img-fluid rounded" style={{width: "100px", height: "100px"}} alt="" />
+                                    <img src="img/testimonial-1.jpg" className="img-fluid rounded" style={{width: "100px", height: "100px"}} alt="" />
                                 </div>
                                 <div className="ms-4 d-block">
                                     <h4 className="text-dark">Client Name</h4>
@@ -1014,7 +1008,7 @@ export default function RootLayout({ children }) {
                             </div>
                             <div className="d-flex align-items-center flex-nowrap">
                                 <div className="bg-secondary rounded">
-                                    <img src="html/img/testimonial-1.jpg" className="img-fluid rounded" style={{width: "100px", height: "100px"}} alt="" />
+                                    <img src="img/testimonial-1.jpg" className="img-fluid rounded" style={{width: "100px", height: "100px"}} alt="" />
                                 </div>
                                 <div className="ms-4 d-block">
                                     <h4 className="text-dark">Client Name</h4>
@@ -1149,7 +1143,7 @@ export default function RootLayout({ children }) {
                             <p>Email: Example@gmail.com</p>
                             <p>Phone: +0123 4567 8910</p>
                             <p>Payment Accepted</p>
-                            <img src="html/img/payment.png" className="img-fluid" alt="" />
+                            <img src="img/payment.png" className="img-fluid" alt="" />
                         </div>
                     </div>
                 </div>
@@ -1169,24 +1163,24 @@ export default function RootLayout({ children }) {
                 </div>
             </div>
         </div>
+        
+        {children}
 
-            {children}
 
-            <a href="#" className="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i className="fa fa-arrow-up"></i></a>   
+        <a href="#" className="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i className="fa fa-arrow-up"></i></a>   
 
         
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="html/lib/easing/easing.min.js"></script>
+    <script src="html/lib/waypoints/waypoints.min.js"></script>
+    <script src="html/lib/lightbox/js/lightbox.min.js"></script>
+    <script src="html/lib/owlcarousel/owl.carousel.min.js"></script>
 
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="html/lib/easing/easing.min.js"></script>
-<script src="html/lib/waypoints/waypoints.min.js"></script>
-<script src="html/lib/lightbox/js/lightbox.min.js"></script>
-<script src="html/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="html/js/main.js"></script>
+    </body>
 
-<script src="html/js/main.js"></script>
-
-        </body>
-    </html>
+</html>
   
   );
 }
