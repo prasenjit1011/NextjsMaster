@@ -89,7 +89,7 @@ export default function ReviewListPage({params}){
                         {
                             reviewList.map((review, key)=>{
                                 return (
-                                    <p className={styles.reviewBox}>
+                                    <p className={styles.reviewBox} key={review["_id"]}>
                                         {review['title']} &nbsp;
                                         <Link href={ "/hotels/"+hotelId+"/reviews/"+review["_id"]} className={styles.readmore} >Read More</Link>
                                     </p>
