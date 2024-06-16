@@ -13,11 +13,9 @@ import { useEffect, useState } from 'react';
 
 
 function ComponentOrganic(){
-    const [hydrated,setHydrated] = useState(false)
 
     useEffect(()=>{
-        //alert(1);
-        setHydrated(true);
+        
         $('.owl-dots').css('display', 'none');
         $('.organic').owlCarousel({
             autoplay: true,
@@ -1157,6 +1155,87 @@ function ComponentM(){
 }
 
 function ComponentTestimonial(){
+    //return (<h1>111</h1>);
+    useEffect(()=>{
+        
+        $('.owl-dots').css('display', 'none');
+        $('.testi').owlCarousel({
+            autoplay: true,
+            smartSpeed: 2000,
+            center: false,
+            dots: true,
+            loop: true,
+            margin: 25,
+            nav : true,
+            navText : [
+                '<i class="bi bi-arrow-left"></i>',
+                '<i class="bi bi-arrow-right"></i>'
+            ],
+            responsiveClass: true,
+            responsive: {
+                0:{
+                    items:1
+                },
+                576:{
+                    items:1
+                },
+                768:{
+                    items:1
+                },
+                992:{
+                    items:2
+                },
+                1200:{
+                    items:2
+                }
+            }
+        });
+    },[]);
+
+    let arr = [1,2,3,4,5,6,7,8,9,10,11,12];
+
+    return (
+        <div style={{marginTop:"20px"}}>
+            <div className="owl-carousel testi testimonial-carousel">
+                {
+                    arr.map((x)=>{
+                        console.log(888);
+                        return (
+                            <div className="testimonial-item img-border-radius bg-light rounded p-4">
+                                <div className="position-relative">
+                                    <i className="fa fa-quote-right fa-2x text-secondary position-absolute" style={{bottom: "30px", right: "0"}}></i>
+                                    <div className="mb-4 pb-4 border-bottom border-secondary">
+                                        <p className="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industrys standard dummy text ever since the 1500s,
+                                        </p>
+                                    </div>
+                                    <div className="d-flex align-items-center flex-nowrap">
+                                        <div className="bg-secondary rounded">
+                                            <img src="html/img/testimonial-2.jpg" className="img-fluid rounded" style={{width: "100px", height: "100px"}} alt="" />
+                                        </div>
+                                        <div className="ms-4 d-block">
+                                            <h4 className="text-dark">Client Name</h4>
+                                            <p className="m-0 pb-3">Profession</p>
+                                            <div className="d-flex pe-5">
+                                                <i className="fas fa-star text-primary"></i>
+                                                <i className="fas fa-star text-primary"></i>
+                                                <i className="fas fa-star text-primary"></i>
+                                                <i className="fas fa-star text-primary"></i>
+                                                <i className="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        )
+                    })
+                }
+            </div>
+        </div>
+    );
+
+
+
     return (
         <h1>ComponentTestimonial</h1>
     );
@@ -1167,7 +1246,7 @@ function ComponentTestimonial(){
                 <div className="position-relative">
                     <i className="fa fa-quote-right fa-2x text-secondary position-absolute" style={{bottom: "30px", right: "0"}}></i>
                     <div className="mb-4 pb-4 border-bottom border-secondary">
-                        <p className="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        <p className="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industrys standard dummy text ever since the 1500s,
                         </p>
                     </div>
                     <div className="d-flex align-items-center flex-nowrap">
@@ -1192,7 +1271,7 @@ function ComponentTestimonial(){
                 <div className="position-relative">
                     <i className="fa fa-quote-right fa-2x text-secondary position-absolute" style={{bottom: "30px", right: "0"}}></i>
                     <div className="mb-4 pb-4 border-bottom border-secondary">
-                        <p className="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        <p className="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industrys standard dummy text ever since the 1500s,
                         </p>
                     </div>
                     <div className="d-flex align-items-center flex-nowrap">
@@ -1217,7 +1296,7 @@ function ComponentTestimonial(){
                 <div className="position-relative">
                     <i className="fa fa-quote-right fa-2x text-secondary position-absolute" style={{bottom: "30px", right: "0"}}></i>
                     <div className="mb-4 pb-4 border-bottom border-secondary">
-                        <p className="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        <p className="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industrys standard dummy text ever since the 1500s,
                         </p>
                     </div>
                     <div className="d-flex align-items-center flex-nowrap">
