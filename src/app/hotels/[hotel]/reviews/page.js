@@ -9,7 +9,8 @@ import "react-datepicker/dist/react-datepicker.css";
 
 export default function ReviewListPage({params}){
     const hotelId   = params.hotel;
-    const apiHost   = 'http://localhost:3000/';
+    const apiHost = 'https://gh4csx-3000.csb.app/';
+    //const apiHost   = 'http://localhost:3000/';
     const apiURL    = apiHost + 'api/hotels/list/';
     const reviewURL = apiHost + 'api/hotels/'+hotelId+'/review';
     const [data, setData]   = useState([]);
