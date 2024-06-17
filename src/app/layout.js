@@ -1201,7 +1201,7 @@ function ComponentTestimonial(){
                     arr.map((x)=>{
                         console.log(888);
                         return (
-                            <div className="testimonial-item img-border-radius bg-light rounded p-4">
+                            <div key={'testimonial'+x} className="testimonial-item img-border-radius bg-light rounded p-4">
                                 <div className="position-relative">
                                     <i className="fa fa-quote-right fa-2x text-secondary position-absolute" style={{bottom: "30px", right: "0"}}></i>
                                     <div className="mb-4 pb-4 border-bottom border-secondary">
