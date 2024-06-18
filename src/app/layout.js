@@ -22,20 +22,11 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/x-icon" href="/html/img/bag.png" />
         <body >
             <AllComponent />
-            <a href="#" className="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i className="fa fa-arrow-up"></i></a>   
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
+
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-            <script src="html/lib/easing/easing.min.js"></script>
-            <script src="html/lib/waypoints/waypoints.min.js"></script>
-            <script src="html/lib/lightbox/js/lightbox.min.js"></script>
-            
-            
-            <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>           
-
-            <script src="html/js/main.js"></script>
-
-
-
             <script src="kider/lib/wow/wow.min.js"></script>
             <script src="kider/lib/easing/easing.min.js"></script>
             <script src="kider/lib/waypoints/waypoints.min.js"></script>
@@ -51,6 +42,6 @@ export default function RootLayout({ children }) {
 
 function AllComponent(){
     return (
-        <h1>All Component 01</h1>
+        <h1>All Component 02</h1>
     );
 }
