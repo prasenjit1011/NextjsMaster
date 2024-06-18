@@ -28,11 +28,14 @@ export default function RootLayout({ children }) {
             <link href="kider/css/style.css" rel="stylesheet" />
         </head>
         <body >
-            
+            <SiteMenu />
+            <Loader />
             {children}
 
 
-
+            <Footer />
+            <ArrowBtn />
+            
             <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
             <script src="kider/lib/wow/wow.min.js"></script>
