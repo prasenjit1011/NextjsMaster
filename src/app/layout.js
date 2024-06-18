@@ -33,17 +33,17 @@ export default function RootLayout({ children }) {
             
             <h1>Hello</h1>
 
-            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-            <script src="hotelier/lib/wow/wow.min.js"></script>
-            <script src="hotelier/lib/easing/easing.min.js"></script>
-            <script src="hotelier/lib/waypoints/waypoints.min.js"></script>
-            <script src="hotelier/lib/counterup/counterup.min.js"></script>
-            <script src="hotelier/lib/owlcarousel/owl.carousel.min.js"></script>
-            <script src="hotelier/lib/tempusdominus/js/moment.min.js"></script>
-            <script src="hotelier/lib/tempusdominus/js/moment-timezone.min.js"></script>
-            <script src="hotelier/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-            <script src="js/main.js"></script>
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" defer></script>
+            <script src="hotelier/lib/wow/wow.min.js" defer></script>
+            <script src="hotelier/lib/easing/easing.min.js" defer></script>
+            <script src="hotelier/lib/waypoints/waypoints.min.js" defer></script>
+            <script src="hotelier/lib/counterup/counterup.min.js" defer></script>
+            <script src="hotelier/lib/owlcarousel/owl.carousel.min.js" defer></script>
+            <script src="hotelier/lib/tempusdominus/js/moment.min.js" defer></script>
+            <script src="hotelier/lib/tempusdominus/js/moment-timezone.min.js" defer></script>
+            <script src="hotelier/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js" defer></script>
+            <script src="js/main.js" defer></script>
         </body>
     </html>
   );
