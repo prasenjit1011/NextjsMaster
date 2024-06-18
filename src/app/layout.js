@@ -48,6 +48,6 @@ export default function RootLayout({ children }) {
 
 function AllComponent(){
     return (
-        <h1>All Component 03</h1>
+        <h1>All Component 04</h1>
     );
 }
