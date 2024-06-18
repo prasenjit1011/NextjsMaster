@@ -98,7 +98,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
         <meta charSet="utf-8" />
-        <title>Fruitables - Vegetable Website Template</title>
+        <title>TuliOutlet - Vegetable Website Template</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta content="" name="keywords" />
         <meta content="" name="description" />
@@ -131,14 +131,25 @@ export default function RootLayout({ children }) {
   );
 }
 
-
+//<ComponentD />
+//<ComponentM />
+//<ComponentI />
 function AllComponent(){
     return (
         <>
             <ComponentA />
-            <Header />
-            <ComponentM />
-            <Footer />
+            <ComponentB />
+            <ComponentC />
+            
+            <ComponentE />
+            
+            <ComponentF />
+            <ComponentG />
+            <ComponentH />
+            
+            <ComponentJ />
+            <ComponentK />
+            <ComponentL />  
         </>
     );
 }
@@ -148,10 +159,7 @@ function Header(){
     
     return (
         <>
-            <ComponentB />
-            <ComponentC />
-            <ComponentD />
-            <ComponentE />
+            
         </>
     );
 }
@@ -160,13 +168,7 @@ function Footer(){
     
     return (
         <>
-            <ComponentF />
-            <ComponentG />
-            <ComponentH />
-            <ComponentI />
-            <ComponentJ />
-            <ComponentK />
-            <ComponentL />            
+                      
         </>
     );
 }
@@ -190,7 +192,7 @@ function ComponentA(){
             </div>
             <div className="container px-0">
                 <nav className="navbar navbar-light bg-white navbar-expand-xl">
-                    <a href="index.html" className="navbar-brand"><h1 className="text-primary display-6">Fruitables</h1></a>
+                    <a href="index.html" className="navbar-brand"><h1 className="text-primary display-6">TuliOutlet</h1></a>
                     <button className="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span className="fa fa-bars text-primary"></span>
                     </button>
