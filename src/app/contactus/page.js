@@ -1,8 +1,8 @@
 'use client'
-
+import { Contactus } from "@/components/contactus";
 
 export default function ContactusPage(){
     return (
-        <h1>Contact Us</h1>
+        <Contactus />
     )
 }
