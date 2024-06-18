@@ -27,7 +27,8 @@ export default function RootLayout({ children }) {
             <link href="kider/css/style.css" rel="stylesheet" />
         </head>
         <body >
-            <AllComponent />
+            
+            {children}
 
 
 
