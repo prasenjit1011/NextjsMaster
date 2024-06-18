@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
         <body className={inter.className}>
             
             <div class="container-xxl bg-white p-0">
-                <h1>Hello</h1>
+                <h1>Hello 01</h1>
                 <Footer />
                 <BackToTopBtn />
             </div>
