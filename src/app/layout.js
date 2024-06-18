@@ -9,7 +9,7 @@ export const metadata = {
 };
 
 
-import { BackToTopBtn, Footer, NewsLetter, Room, Service, Teams, Testimonials } from "@/components/hotelier";
+import { BackToTopBtn, Banner, Booking, AboutUs, Footer, Header, NewsLetter, Room, Service, Teams, Testimonials } from "@/components/hotelier";
 
 export default function RootLayout({ children }) {
   return (
@@ -35,7 +35,10 @@ export default function RootLayout({ children }) {
         <body className={inter.className}>
             
             <div class="container-xxl bg-white p-0">
-                <h1>Hello 01</h1>
+                <Header />
+                <Banner />
+                <Booking />
+                <AboutUs />
                 <Room />
                 <Service />
                 <Testimonials />
