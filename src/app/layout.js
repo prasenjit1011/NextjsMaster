@@ -33,6 +33,15 @@ export default function RootLayout({ children }) {
             <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>           
 
             <script src="html/js/main.js"></script>
+
+
+
+            <script src="kider/lib/wow/wow.min.js"></script>
+            <script src="kider/lib/easing/easing.min.js"></script>
+            <script src="kider/lib/waypoints/waypoints.min.js"></script>
+            <script src="kider/lib/owlcarousel/owl.carousel.min.js"></script>
+            <script src="kider/js/main.js"></script>
+
         </body>
     </html>
   );
@@ -42,6 +51,6 @@ export default function RootLayout({ children }) {
 
 function AllComponent(){
     return (
-        <h1>All Component</h1>
+        <h1>All Component 01</h1>
     );
 }
