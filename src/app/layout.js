@@ -9,7 +9,7 @@ export const metadata = {
 };
 
 
-import { BackToTopBtn, Footer } from "@/components/hotelier";
+import { BackToTopBtn, Footer, NewsLetter, Room, Service, Teams, Testimonials } from "@/components/hotelier";
 
 export default function RootLayout({ children }) {
   return (
@@ -36,6 +36,11 @@ export default function RootLayout({ children }) {
             
             <div class="container-xxl bg-white p-0">
                 <h1>Hello 01</h1>
+                <Room />
+                <Service />
+                <Testimonials />
+                <Teams />
+                <NewsLetter />
                 <Footer />
                 <BackToTopBtn />
             </div>
