@@ -1,5 +1,6 @@
 'use client';
  
+import {SiteMenu, Loader, Banner, Facility, LearnMore, BecomeTeacher, Appointment, Teams, Testimonial, TestimonialList, Footer, ArrowBtn} from "@/components/common";
 
 export default function RootLayout({ children }) {
   return (
