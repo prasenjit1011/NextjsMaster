@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import styles from "../page.module.css";
 import { useEffect, useState } from "react";
@@ -39,7 +40,16 @@ export default function HotelListPage(){
         <main className={styles.main}>
             {
                 !Object.keys(data).length 
-                ? <div data-testid="no-result">No Results Found</div>
+                ?   <div data-testid="no-result">                    
+                        <Image 
+                            className={styles.logo}
+                            src="/loading.gif"
+                            alt="Loading...."
+                            width={287}
+                            height={141}
+                            priority
+                        />
+                    </div>
                 : <div data-testid="hotelList">
                     {
                         data.map((value, key)=>{
