@@ -22,9 +22,9 @@ export default function Header(){
 
             <Link href="/accounts/login">Accounts</Link> &nbsp;| &nbsp; &nbsp; &nbsp;
             
-            <Link href="/user">Profile</Link> &nbsp;| &nbsp;
-            <Link href="/user/wishlist">Customer</Link> &nbsp;| &nbsp;
-            <Link href="/notfound">404 Page</Link> &nbsp;| &nbsp;
+            <Link href="/user" style={{display:"none"}}>Profile</Link> &nbsp;| &nbsp;
+            <Link href="/user/wishlist" style={{display:"none"}}>Customer</Link> &nbsp;| &nbsp;
+            <Link href="/notfound" style={{display:"none"}}>404 Page</Link> &nbsp;| &nbsp;
         </div>
     );
 }
