@@ -36,14 +36,7 @@ export default function RootLayout({ children }) {
             
             <div class="container-xxl bg-white p-0">
                 <Header />
-                <Banner />
-                <Booking />
-                <AboutUs />
-                <Room />
-                <Service />
-                <Testimonials />
-                <Teams />
-                <NewsLetter />
+                {children}                
                 <Footer />
                 <BackToTopBtn />
             </div>

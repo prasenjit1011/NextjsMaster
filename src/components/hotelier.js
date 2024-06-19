@@ -1,6 +1,212 @@
-export function Banner(){
+'use client';
+import Link from "next/link";
+import { useEffect } from "react";
 
-    
+export function Facility(){
+    return (
+        
+        <div class="container-fluid my-5 p-0">
+            <div class="row g-0">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="feature-item">
+            <h5 class="bg-primary text-white text-center p-4 m-0">Fitness Clab</h5>
+            <div class="position-relative overflow-hidden">
+            <img class="img-fluid" src="hotelier/img/feature-1.jpg" alt="" />
+            <div class="feature-text text-white text-center">
+            <p class="m-0">Clita sed diam est vero elitr ipsum. Et ipsum amet sea sed amet sed dolor justo vero lorem. Vero amet erat eos ipsum stet elitr tempor magna</p>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="feature-item">
+            <h5 class="bg-dark text-white text-center p-4 m-0">Party Center</h5>
+            <div class="position-relative overflow-hidden">
+            <img class="img-fluid" src="hotelier/img/feature-2.jpg" alt="" />
+            <div class="feature-text text-white text-center">
+            <p class="m-0">Clita sed diam est vero elitr ipsum. Et ipsum amet sea sed amet sed dolor justo vero lorem. Vero amet erat eos ipsum stet elitr tempor magna</p>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="feature-item">
+            <h5 class="bg-primary text-white text-center p-4 m-0">Restaurant</h5>
+            <div class="position-relative overflow-hidden">
+            <img class="img-fluid" src="hotelier/img/feature-3.jpg" alt="" />
+            <div class="feature-text text-white text-center">
+            <p class="m-0">Clita sed diam est vero elitr ipsum. Et ipsum amet sea sed amet sed dolor justo vero lorem. Vero amet erat eos ipsum stet elitr tempor magna</p>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="feature-item">
+            <h5 class="bg-dark text-white text-center p-4 m-0">Private Beach</h5>
+            <div class="position-relative overflow-hidden">
+            <img class="img-fluid" src="hotelier/img/feature-4.jpg" alt="" />
+            <div class="feature-text text-white text-center">
+            <p class="m-0">Clita sed diam est vero elitr ipsum. Et ipsum amet sea sed amet sed dolor justo vero lorem. Vero amet erat eos ipsum stet elitr tempor magna</p>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    );
+}
+
+export function FacilityDetails(){
+    return (
+        <div class="container-xxl py-5">
+            <div class="container">
+            <div class="row g-5">
+            <div class="col-lg-6 pt-4" style={{minHeight: "350px"}}>
+            <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
+            <img class="position-absolute img-fluid w-100 h-100 rounded" src="hotelier/img/feature.jpg" style={{objectFit: "cover"}} alt="" />
+            <div class="bg-white border p-1 position-absolute top-0 end-0 mt-n4 me-n4">
+            <div class="border py-4 px-5">
+            <h1 class="display-4 text-primary mb-0">15 <span class="fs-4 text-dark">Years</span></h1>
+            <h4>Experience</h4>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-6">
+            <h6 class="section-title text-start text-primary text-uppercase">Features</h6>
+            <h1 class="mb-4">Why <span class="text-primary text-uppercase">Choose</span> Us</h1>
+            <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+            <div class="row g-4">
+            <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+            <div class="d-flex">
+            <div class="flex-shrink-0 border rounded p-1" style={{width: "50px", height: "50px"}}>
+            <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+            <i class="fa fa-bed text-primary"></i>
+            </div>
+            </div>
+            <div class="ps-4">
+            <h5>Relux Living</h5>
+            <p class="m-0">Clita dolor sit lorem justo lorem. Diam dolore et sed erat, erat est diam dolore kasd sit sed amet sit dolor sed.</p>
+            </div>
+            </div>
+            </div>
+            <div class="col-12 wow fadeIn" data-wow-delay="0.2s">
+            <div class="d-flex">
+            <div class="flex-shrink-0 border rounded p-1" style={{width: "50px", height: "50px"}}>
+            <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+            <i class="fa fa-shield-alt text-primary"></i>
+            </div>
+            </div>
+            <div class="ps-4">
+            <h5>High Security System</h5>
+            <p class="m-0">Clita dolor sit lorem justo lorem. Diam dolore et sed erat, erat est diam dolore kasd sit sed amet sit dolor sed.</p>
+            </div>
+            </div>
+            </div>
+            <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+            <div class="d-flex">
+            <div class="flex-shrink-0 border rounded p-1" style={{width: "50px", height: "50px"}}>
+            <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+            <i class="fa fa-phone-alt text-primary"></i>
+            </div>
+            </div>
+            <div class="ps-4">
+            <h5>24/7 Telephone Support</h5>
+            <p class="m-0">Clita dolor sit lorem justo lorem. Diam dolore et sed erat, erat est diam dolore kasd sit sed amet sit dolor sed.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    );
+}
+
+
+export function AboutusContent(){
+    return (
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <h6 class="section-title text-start text-primary text-uppercase">About Us</h6>
+                        <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">Hotelier</span></h1>
+                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        <div class="row g-3 pb-4">
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center p-4">
+                                        <i class="fa fa-hotel fa-2x text-primary mb-2"></i>
+                                        <h2 class="mb-1" data-toggle="counter-up">1234</h2>
+                                        <p class="mb-0">Rooms</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center p-4">
+                                        <i class="fa fa-users-cog fa-2x text-primary mb-2"></i>
+                                        <h2 class="mb-1" data-toggle="counter-up">1234</h2>
+                                        <p class="mb-0">Staffs</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center p-4">
+                                        <i class="fa fa-users fa-2x text-primary mb-2"></i>
+                                        <h2 class="mb-1" data-toggle="counter-up">1234</h2>
+                                        <p class="mb-0">Clients</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary py-3 px-5 mt-2" href="">Explore More</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="hotelier/img/about-1.jpg" style={{marginTop: "25%"}} />
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="hotelier/img/about-2.jpg" />
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="hotelier/img/about-3.jpg" />
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="hotelier/img/about-4.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    );
+}
+
+export function BannerAboutus(){
+    return (
+        <div className="container-fluid page-header mb-5 p-0" style={{backgroundImage: "url(hotelier/img/carousel-1.jpg)"}}>
+            <div className="container-fluid page-header-inner py-5">
+                <div className="container text-center pb-5">
+                    <h1 className="display-3 text-white mb-3 animated slideInDown">About Us</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol className="breadcrumb justify-content-center text-uppercase">
+                            <li className="breadcrumb-item"><Link href="/">Home</Link></li>
+                            <li className="breadcrumb-item text-white active" aria-current="page">About</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+    );
+}
+
+export function Banner(){
     return (
         <div className="container-fluid p-0 mb-5">
             <div id="header-carousel" className="carousel slide" data-bs-ride="carousel">
@@ -46,12 +252,12 @@ export function Banner(){
 
 export function Header(){
     return (
-<div className="container-fluid bg-dark px-0">
+        <div className="container-fluid bg-dark px-0">
             <div className="row gx-0">
                 <div className="col-lg-3 bg-dark d-none d-lg-block">
-                    <a href="index.html" className="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                    <Link href="/" className="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
                         <h1 className="m-0 text-primary text-uppercase">Hotelier</h1>
-                    </a>
+                    </Link>
                 </div>
                 <div className="col-lg-9">
                     <div className="row gx-0 bg-white d-none d-lg-flex">
@@ -76,29 +282,21 @@ export function Header(){
                         </div>
                     </div>
                     <nav className="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
-                        <a href="index.html" className="navbar-brand d-block d-lg-none">
+                        <Link href="/" className="navbar-brand d-block d-lg-none">
                             <h1 className="m-0 text-primary text-uppercase">Hotelier</h1>
-                        </a>
+                        </Link>
                         <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div className="navbar-nav mr-auto py-0">
-                                <a href="index.html" className="nav-item nav-link active">Home</a>
-                                <a href="about.html" className="nav-item nav-link">About</a>
-                                <a href="service.html" className="nav-item nav-link">Services</a>
-                                <a href="room.html" className="nav-item nav-link">Rooms</a>
-                                <div className="nav-item dropdown">
-                                    <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                                    <div className="dropdown-menu rounded-0 m-0">
-                                        <a href="booking.html" className="dropdown-item">Booking</a>
-                                        <a href="team.html" className="dropdown-item">Our Team</a>
-                                        <a href="testimonial.html" className="dropdown-item">Testimonial</a>
-                                    </div>
-                                </div>
-                                <a href="contact.html" className="nav-item nav-link">Contact</a>
+                                <Link href="/" className="nav-item nav-link active">Home</Link>
+                                <Link href="/aboutus" className="nav-item nav-link">About</Link>
+                                <Link href="service" className="nav-item nav-link">Services</Link>
+                                <Link href="room" className="nav-item nav-link">Rooms</Link>
+                                <Link href="team" className="nav-item nav-link">Our Team</Link>
+                                <Link href="contact" className="nav-item nav-link">Contact</Link>
                             </div>
-                            <a href="https://htmlcodex.com/hotel-html-template-pro" className="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Premium Version<i className="fa fa-arrow-right ms-3"></i></a>
                         </div>
                     </nav>
                 </div>
@@ -202,16 +400,16 @@ export function AboutUs(){
                     <div className="col-lg-6">
                         <div className="row g-3">
                             <div className="col-6 text-end">
-                                <img className="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="img/about-1.jpg" style={{marginTop: "25%"}} />
+                                <img className="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="hotelier/img/about-1.jpg" style={{marginTop: "25%"}} />
                             </div>
                             <div className="col-6 text-start">
-                                <img className="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="img/about-2.jpg" />
+                                <img className="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="hotelier/img/about-2.jpg" />
                             </div>
                             <div className="col-6 text-end">
-                                <img className="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="img/about-3.jpg" />
+                                <img className="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="hotelier/img/about-3.jpg" />
                             </div>
                             <div className="col-6 text-start">
-                                <img className="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="img/about-4.jpg" />
+                                <img className="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="hotelier/img/about-4.jpg" />
                             </div>
                         </div>
                     </div>
@@ -220,9 +418,6 @@ export function AboutUs(){
         </div>
     );
 }
-
-
-
 
 
 export function Room(){
@@ -416,6 +611,32 @@ export function Service(){
 
 
 export function Testimonials(){
+
+    useEffect(()=>{
+        $(".testimonial-carousel").owlCarousel({
+            autoplay: true,
+            smartSpeed: 1000,
+            margin: 25,
+            dots: false,
+            loop: true,
+            nav : true,
+            navText : [
+                '<i className="bi bi-arrow-left"></i>',
+                '<i className="bi bi-arrow-right"></i>'
+            ],
+            responsive: {
+                0:{
+                    items:1
+                },
+                768:{
+                    items:2
+                }
+            }
+        });
+    
+    }, []);
+
+
     return (
 
         <div className="container-xxl testimonial my-5 py-5 bg-dark wow zoomIn" data-wow-delay="0.1s">
@@ -572,7 +793,7 @@ export function Footer(){
                 <div className="row g-5">
                     <div className="col-md-6 col-lg-4">
                         <div className="bg-primary rounded p-4">
-                            <a href="index.html"><h1 className="text-white text-uppercase mb-3">Hotelier</h1></a>
+                            <Link href="/"><h1 className="text-white text-uppercase mb-3">Hotelier</h1></Link>
                             <p className="text-white mb-0">
 								Download <a className="text-dark fw-medium" href="https://htmlcodex.com/hotel-html-template-pro">Hotelier – Premium Version</a>, build a professional website for your hotel business and grab the attention of new visitors upon your site’s launch.
 							</p>
@@ -622,10 +843,10 @@ export function Footer(){
                         </div>
                         <div className="col-md-6 text-center text-md-end">
                             <div className="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
+                                <Link href="">Home</Link>
+                                <Link href="">Cookies</Link>
+                                <Link href="">Help</Link>
+                                <Link href="">FQAs</Link>
                             </div>
                         </div>
                     </div>
