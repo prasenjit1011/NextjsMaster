@@ -1380,29 +1380,29 @@ export function Footer(){
                         <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>+012 345 67890</p>
                         <p className="mb-2"><i className="fa fa-envelope me-3"></i>info@example.com</p>
                         <div className="d-flex pt-2">
-                            <a className="btn btn-outline-light btn-social" href=""><i className="fab fa-twitter"></i></a>
-                            <a className="btn btn-outline-light btn-social" href=""><i className="fab fa-facebook-f"></i></a>
-                            <a className="btn btn-outline-light btn-social" href=""><i className="fab fa-youtube"></i></a>
-                            <a className="btn btn-outline-light btn-social" href=""><i className="fab fa-linkedin-in"></i></a>
+                            <Link className="btn btn-outline-light btn-social" href=""><i className="fab fa-twitter"></i></Link>
+                            <Link className="btn btn-outline-light btn-social" href=""><i className="fab fa-facebook-f"></i></Link>
+                            <Link className="btn btn-outline-light btn-social" href=""><i className="fab fa-youtube"></i></Link>
+                            <Link className="btn btn-outline-light btn-social" href=""><i className="fab fa-linkedin-in"></i></Link>
                         </div>
                     </div>
                     <div className="col-lg-5 col-md-12">
                         <div className="row gy-5 g-4">
                             <div className="col-md-6">
                                 <h6 className="section-title text-start text-primary text-uppercase mb-4">Company</h6>
-                                <a className="btn btn-link" href="">About Us</a>
-                                <a className="btn btn-link" href="">Contact Us</a>
-                                <a className="btn btn-link" href="">Privacy Policy</a>
-                                <a className="btn btn-link" href="">Terms & Condition</a>
-                                <a className="btn btn-link" href="">Support</a>
+                                <Link className="btn btn-link" href="/aboutus">About Us</Link>
+                                <Link className="btn btn-link" href="/contact">Contact Us</Link>
+                                <Link className="btn btn-link" href="/privacy">Privacy Policy</Link>
+                                <Link className="btn btn-link" href="/term">Terms & Condition</Link>
+                                <Link className="btn btn-link" href="/support">Support</Link>
                             </div>
                             <div className="col-md-6">
                                 <h6 className="section-title text-start text-primary text-uppercase mb-4">Services</h6>
-                                <a className="btn btn-link" href="">Food & Restaurant</a>
-                                <a className="btn btn-link" href="">Spa & Fitness</a>
-                                <a className="btn btn-link" href="">Sports & Gaming</a>
-                                <a className="btn btn-link" href="">Event & Party</a>
-                                <a className="btn btn-link" href="">GYM & Yoga</a>
+                                <Link className="btn btn-link" href="/restaurant">Food & Restaurant</Link>
+                                <Link className="btn btn-link" href="/fitness">Spa & Fitness</Link>
+                                <Link className="btn btn-link" href="/sports">Sports & Gaming</Link>
+                                <Link className="btn btn-link" href="/event">Event & Party</Link>
+                                <Link className="btn btn-link" href="/gym">GYM & Yoga</Link>
                             </div>
                         </div>
                     </div>
@@ -1419,9 +1419,9 @@ export function Footer(){
                         <div className="col-md-6 text-center text-md-end">
                             <div className="footer-menu">
                                 <Link href="">Home</Link>
-                                <Link href="">Cookies</Link>
-                                <Link href="">Help</Link>
-                                <Link href="">FQAs</Link>
+                                <Link href="/cookie">Cookies</Link>
+                                <Link href="/help">Help</Link>
+                                <Link href="/faqs">FQAs</Link>
                             </div>
                         </div>
                     </div>
@@ -1437,5 +1437,23 @@ export function BackToTopBtn(){
         <a href="#" className="btn btn-lg btn-primary btn-lg-square back-to-top">
             <i className="bi bi-arrow-up"></i>
         </a>
+    );
+}
+
+export function PageNotFound(){
+    return (
+        <div class="container-xxl py-5 wow fadeIn" data-wow-delay="0.1s">
+          <div class="container text-center">
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <i class="bi bi-exclamation-triangle display-1 text-primary"></i>
+                <h1 class="display-1">404</h1>
+                <h1 class="mb-4">Page Not Found</h1>
+                <p class="mb-4">We’re sorry, the page you have looked for does not exist in our website! Maybe go to our home page or try to use a search?</p>
+                <a class="btn btn-primary py-3 px-5" href>Go Back To Home</a>
+              </div>
+            </div>
+          </div>
+        </div>
     );
 }

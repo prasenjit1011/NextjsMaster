@@ -57,7 +57,7 @@ export default function RootLayout({ children }) {
             <script src="hotelier/lib/tempusdominus/js/moment.min.js" defer></script>
             <script src="hotelier/lib/tempusdominus/js/moment-timezone.min.js" defer></script>
             <script src="hotelier/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js" defer></script>
-            <script src="js/main.js" defer></script>
+            <script src="hotelier/js/main.js" defer></script>
         </body>
     </html>
   );

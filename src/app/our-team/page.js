@@ -9,10 +9,6 @@ export default function OurTeam(){
             <Booking />
             <Teams />
             <NewsLetter />
-        </>
-        
-    )
-    
-    
-    ;
+        </>   
+    );
 }

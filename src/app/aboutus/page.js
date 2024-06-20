@@ -5,8 +5,6 @@ import Image from "next/image";
 export default function Aboutus(){
     return (
         <>
-            <Banner title="About Us" />
-            <Booking />
             <AboutusContent />
             <Facility />
             <FacilityDetails />
