@@ -92,8 +92,8 @@ export function BannerHome(){
                             <div className="p-3" style={{maxWidth: "700px"}}>
                                 <h6 className="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>
                                 <h1 className="display-3 text-white mb-4 animated slideInDown">Discover A Brand Luxurious Hotel</h1>
-                                <a href="" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Rooms</a>
-                                <a href="" className="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a>
+                                <Link href="/rooms" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Rooms</Link>
+                                <Link href="/rooms" className="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</Link>
                             </div>
                         </div>
                     </div>
@@ -103,8 +103,8 @@ export function BannerHome(){
                             <div className="p-3" style={{maxWidth: "700px"}}>
                                 <h6 className="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>
                                 <h1 className="display-3 text-white mb-4 animated slideInDown">Discover A Brand Luxurious Hotel</h1>
-                                <a href="" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Rooms</a>
-                                <a href="" className="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a>
+                                <Link href="/rooms" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Rooms</Link>
+                                <Link href="/rooms" className="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</Link>
                             </div>
                         </div>
                     </div>

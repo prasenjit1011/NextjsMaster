@@ -2,51 +2,332 @@
 import Link from "next/link";
 import { useEffect } from "react";
 
+export function Faqs(){
+    return (
+        <>
+        <div className="container-xxl py-5">
+            <div className="container">
+                <div className="row g-5">
+                    <div className="col-lg-8">
+                        <FaqsDetails />
+                        <FaqsList />
+                    </div>
+                    <div className="col-lg-4">
+                        <FaqSupport />
+                    </div>
+                </div>
+            </div>
+        </div>
+        </>
+    );
+}
+
+function FaqsDetails(){
+    return (
+        <>
+            <div className="row g-3 mb-5">
+                <div className="col-md-6">
+                    <img className="img-fluid" src="hotelier/img/room-1.jpg" alt="" />
+                </div>
+                <div className="col-md-6">
+                    <img className="img-fluid" src="hotelier/img/room-1.jpg" alt="" />
+                </div>
+            </div>
+            <h1 className="mb-4">Freequently Asked Questions</h1>
+            <p className="mb-4">
+                Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut magna lorem. Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet amet magna accusam consetetur eirmod. Kasd accusam sit ipsum sadipscing et at at sanctus et. Ipsum sit gubergren dolores et, consetetur justo invidunt at et aliquyam ut et vero clita. Diam sea sea no sed dolores diam nonumy, gubergren sit stet no diam kasd vero.
+            </p>
+        </>
+    );
+}
+
+function FaqSupport(){
+    return (
+        <>
+            <div className="bg-light p-4 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <h4 className="section-title text-start mb-4">Popular FAQs</h4>
+            <div className="d-flex flex-column justify-content-start">
+            <a className="h6 fw-medium pb-3 mb-3 border-bottom d-flex align-items-center justify-content-between" href="#"><span>How to build a website?</span> <i className="bi bi-arrow-right ms-3"></i></a>
+            <a className="h6 fw-medium pb-3 mb-3 border-bottom d-flex align-items-center justify-content-between" href="#"><span>How long will it take to get a new website?</span> <i className="bi bi-arrow-right ms-3"></i></a>
+            <a className="h6 fw-medium pb-3 mb-3 border-bottom d-flex align-items-center justify-content-between" href="#"><span>Do you only create HTML websites?</span> <i className="bi bi-arrow-right ms-3"></i></a>
+            <a className="h6 fw-medium pb-3 mb-3 border-bottom d-flex align-items-center justify-content-between" href="#"><span>Will my website be mobile-friendly?</span> <i className="bi bi-arrow-right ms-3"></i></a>
+            <a className="h6 fw-medium pb-3 mb-3 border-bottom d-flex align-items-center justify-content-between" href="#"><span>Will you maintain my site for me?</span> <i className="bi bi-arrow-right ms-3"></i></a>
+            <a className="h6 fw-medium pb-0 mb-0 border-0 d-flex align-items-center justify-content-between" href="#"><span>When do I pay?</span> <i className="bi bi-arrow-right ms-3"></i></a>
+            </div>
+            </div>
+
+
+            <div className="border p-1 wow fadeInUp" data-wow-delay="0.1s">
+            <div className="border p-4">
+            <h4 className="section-title text-start mb-4">Help & Support</h4>
+            <p>Lorem sed erat elitr magna magna labore duo elitr ipsum duo. Et sed duo rebum lorem sed stet sed</p>
+            <div className="bg-primary text-center p-3">
+            <h4 className="text-white m-0">+012 345 67890</h4>
+            </div>
+            </div>
+            </div>
+        </>
+    );
+}
+
+function FaqsList(){
+    return (
+
+                        <div className="accordion accordion-custom" id="accordionExample">
+
+                            <div className="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+                                <h2 className="accordion-header" id="headingOne">
+                                    <button className="accordion-button fw-semi-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        How to build a website?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div className="accordion-body">
+                                        Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+<h2 className="accordion-header" id="headingTwo">
+<button className="accordion-button collapsed fw-semi-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+How long will it take to get a new website?
+</button>
+</h2>
+<div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+<div className="accordion-body">
+Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+</div>
+</div>
+</div>
+<div className="accordion-item wow fadeInUp" data-wow-delay="0.3s">
+<h2 className="accordion-header" id="headingThree">
+<button className="accordion-button collapsed fw-semi-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+Do you only create HTML websites?
+</button>
+</h2>
+<div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+<div className="accordion-body">
+Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+</div>
+</div>
+</div>
+<div className="accordion-item wow fadeInUp" data-wow-delay="0.4s">
+<h2 className="accordion-header" id="headingFour">
+<button className="accordion-button collapsed fw-semi-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+Will my website be mobile-friendly?
+</button>
+</h2>
+<div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+<div className="accordion-body">
+Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+</div>
+</div>
+</div>
+<div className="accordion-item wow fadeInUp" data-wow-delay="0.5s">
+<h2 className="accordion-header" id="headingFive">
+<button className="accordion-button collapsed fw-semi-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+Will you maintain my site for me?
+</button>
+</h2>
+<div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+<div className="accordion-body">
+Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+</div>
+</div>
+</div>
+<div className="accordion-item wow fadeInUp" data-wow-delay="0.6s">
+<h2 className="accordion-header" id="headingSix">
+<button className="accordion-button collapsed fw-semi-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+I’m on a strict budget. Do you have any low cost options?
+</button>
+</h2>
+<div id="collapseSix" className="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+<div className="accordion-body">
+Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+</div>
+</div>
+</div>
+<div className="accordion-item wow fadeInUp" data-wow-delay="0.7s">
+<h2 className="accordion-header" id="headingSeven">
+<button className="accordion-button collapsed fw-semi-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+Will you maintain my site for me?
+</button>
+</h2>
+<div id="collapseSeven" className="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+<div className="accordion-body">
+Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+</div>
+</div>
+</div>
+<div className="accordion-item wow fadeInUp" data-wow-delay="0.8s">
+<h2 className="accordion-header" id="headingEight">
+<button className="accordion-button collapsed fw-semi-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+I’m on a strict budget. Do you have any low cost options?
+</button>
+</h2>
+<div id="collapseEight" className="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+<div className="accordion-body">
+Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+</div>
+</div>
+</div>
+                        </div>
+                    
+    );
+}
+
+export function Gallery(){
+    return (<>
+    <div className="container-xxl py-5">
+<div className="container">
+<div className="text-center wow fadeInUp" data-wow-delay="0.1s">
+<h6 className="section-title text-center text-primary text-uppercase">Gallery</h6>
+<h1 className="mb-5">Our Photo <span className="text-primary text-uppercase">Gallery</span></h1>
+</div>
+<div className="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+<div className="col-12 text-center">
+<ul className="list-inline mb-5" id="portfolio-flters">
+<li className="btn btn-outline-primary active" data-filter="*">All Photos</li>
+<li className="btn btn-outline-primary" data-filter=".first">Hotel</li>
+<li className="btn btn-outline-primary" data-filter=".second">Rooms</li>
+<li className="btn btn-outline-primary" data-filter=".third">Beach</li>
+</ul>
+</div>
+</div>
+<div className="row g-4 portfolio-container">
+<div className="col-lg-4 col-md-6 portfolio-item first wow slideInUp" data-wow-delay="0.1s">
+<div className="position-relative rounded overflow-hidden">
+<img className="img-fluid" src="hotelier/img/gallery-1.jpg" alt="" />
+<div className="portfolio-btn">
+<a className="btn btn-square btn-outline-light" href="hotelier/img/gallery-1.jpg" data-lightbox="portfolio"><i className="bi bi-plus"></i></a>
+</div>
+</div>
+</div>
+<div className="col-lg-4 col-md-6 portfolio-item second wow slideInUp" data-wow-delay="0.2s">
+<div className="position-relative rounded overflow-hidden">
+<img className="img-fluid" src="hotelier/img/gallery-2.jpg" alt="" />
+<div className="portfolio-btn">
+<Link className="btn btn-square btn-outline-light" href="hotelier/img/gallery-2.jpg" data-lightbox="portfolio"><i className="bi bi-plus"></i></Link>
+</div>
+</div>
+</div>
+<div className="col-lg-4 col-md-6 portfolio-item third wow slideInUp" data-wow-delay="0.3s">
+<div className="position-relative rounded overflow-hidden">
+<img className="img-fluid" src="hotelier/img/gallery-3.jpg" alt="" />
+<div className="portfolio-btn">
+<Link className="btn btn-square btn-outline-light" href="hotelier/img/gallery-3.jpg" data-lightbox="portfolio"><i className="bi bi-plus"></i></Link>
+</div>
+</div>
+</div>
+<div className="col-lg-4 col-md-6 portfolio-item first wow slideInUp" data-wow-delay="0.4s">
+<div className="position-relative rounded overflow-hidden">
+<img className="img-fluid" src="hotelier/img/gallery-4.jpg" alt="" />
+<div className="portfolio-btn">
+<Link className="btn btn-square btn-outline-light" href="hotelier/img/gallery-4.jpg" data-lightbox="portfolio"><i className="bi bi-plus"></i></Link>
+</div>
+</div>
+</div>
+<div className="col-lg-4 col-md-6 portfolio-item second wow slideInUp" data-wow-delay="0.5s">
+<div className="position-relative rounded overflow-hidden">
+<img className="img-fluid" src="hotelier/img/gallery-5.jpg" alt="" />
+<div className="portfolio-btn">
+<Link className="btn btn-square btn-outline-light" href="hotelier/img/gallery-5.jpg" data-lightbox="portfolio"><i className="bi bi-plus"></i></Link>
+</div>
+</div>
+</div>
+<div className="col-lg-4 col-md-6 portfolio-item third wow slideInUp" data-wow-delay="0.6s">
+<div className="position-relative rounded overflow-hidden">
+<img className="img-fluid" src="hotelier/img/gallery-6.jpg" alt="" />
+<div className="portfolio-btn">
+<Link className="btn btn-square btn-outline-light" href="hotelier/img/gallery-6.jpg" data-lightbox="portfolio"><i className="bi bi-plus"></i></Link>
+</div>
+</div>
+</div>
+<div className="col-lg-4 col-md-6 portfolio-item first wow slideInUp" data-wow-delay="0.7s">
+<div className="position-relative rounded overflow-hidden">
+<img className="img-fluid" src="hotelier/img/gallery-7.jpg" alt="" />
+<div className="portfolio-btn">
+<Link className="btn btn-square btn-outline-light" href="hotelier/img/gallery-7.jpg" data-lightbox="portfolio"><i className="bi bi-plus"></i></Link>
+</div>
+</div>
+</div>
+<div className="col-lg-4 col-md-6 portfolio-item second wow slideInUp" data-wow-delay="0.8s">
+<div className="position-relative rounded overflow-hidden">
+<img className="img-fluid" src="hotelier/img/gallery-8.jpg" alt="" />
+<div className="portfolio-btn">
+<Link className="btn btn-square btn-outline-light" href="hotelier/img/gallery-8.jpg" data-lightbox="portfolio"><i className="bi bi-plus"></i></Link>
+</div>
+</div>
+</div>
+<div className="col-lg-4 col-md-6 portfolio-item third wow slideInUp" data-wow-delay="0.9s">
+<div className="position-relative rounded overflow-hidden">
+<img className="img-fluid" src="hotelier/img/gallery-9.jpg" alt="" />
+<div className="portfolio-btn">
+<Link className="btn btn-square btn-outline-light" href="hotelier/img/gallery-9.jpg" data-lightbox="portfolio"><i className="bi bi-plus"></i></Link>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+    </>)
+}
+
+
+
+
+
+
+
+
+
+
+
 export function RoomDetails(){
     return (
         <>
 
-<div class="container-xxl py-5">
-<div class="container">
-<div class="row g-5">
+<div className="container-xxl py-5">
+<div className="container">
+<div className="row g-5">
 
-<div class="col-lg-8">
-<div id="room-carousel" class="carousel slide mb-5 wow fadeIn" data-bs-ride="carousel" data-wow-delay="0.1s">
-<div class="carousel-inner">
-<div class="carousel-item active">
-<img class="w-100" src="/hotelier/img/carousel-1.jpg" alt="Image" />
+<div className="col-lg-8">
+<div id="room-carousel" className="carousel slide mb-5 wow fadeIn" data-bs-ride="carousel" data-wow-delay="0.1s">
+<div className="carousel-inner">
+<div className="carousel-item active">
+<img className="w-100" src="/hotelier/img/carousel-1.jpg" alt="Image" />
 </div>
-<div class="carousel-item">
-<img class="w-100" src="/hotelier/img/carousel-2.jpg" alt="Image" />
+<div className="carousel-item">
+<img className="w-100" src="/hotelier/img/carousel-2.jpg" alt="Image" />
 </div>
 </div>
-<button class="carousel-control-prev" type="button" data-bs-target="#room-carousel" data-bs-slide="prev">
-<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Previous</span>
+<button className="carousel-control-prev" type="button" data-bs-target="#room-carousel" data-bs-slide="prev">
+<span className="carousel-control-prev-icon" aria-hidden="true"></span>
+<span className="visually-hidden">Previous</span>
 </button>
-<button class="carousel-control-next" type="button" data-bs-target="#room-carousel" data-bs-slide="next">
-<span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Next</span>
+<button className="carousel-control-next" type="button" data-bs-target="#room-carousel" data-bs-slide="next">
+<span className="carousel-control-next-icon" aria-hidden="true"></span>
+<span className="visually-hidden">Next</span>
 </button>
 </div>
-<div class="d-flex align-items-center mb-4">
-<h1 class="mb-0">Junior Suite</h1>
-<div class="ps-3">
-<small class="fa fa-star text-primary"></small>
-<small class="fa fa-star text-primary"></small>
-<small class="fa fa-star text-primary"></small>
-<small class="fa fa-star text-primary"></small>
-<small class="fa fa-star text-primary"></small>
+<div className="d-flex align-items-center mb-4">
+<h1 className="mb-0">Junior Suite</h1>
+<div className="ps-3">
+<small className="fa fa-star text-primary"></small>
+<small className="fa fa-star text-primary"></small>
+<small className="fa fa-star text-primary"></small>
+<small className="fa fa-star text-primary"></small>
+<small className="fa fa-star text-primary"></small>
 </div>
 </div>
-<div class="d-flex flex-wrap pb-4 m-n1">
-<small class="bg-light rounded py-1 px-3 m-1"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
-<small class="bg-light rounded py-1 px-3 m-1"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
-<small class="bg-light rounded py-1 px-3 m-1"><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
-<small class="bg-light rounded py-1 px-3 m-1"><i class="fa fa-tv text-primary me-2"></i>TV</small>
-<small class="bg-light rounded py-1 px-3 m-1"><i class="fa fa-fan text-primary me-2"></i>AC</small>
-<small class="bg-light rounded py-1 px-3 m-1"><i class="fa fa-user-cog text-primary me-2"></i>Laundry</small>
-<small class="bg-light rounded py-1 px-3 m-1"><i class="fa fa-utensils text-primary me-2"></i>Dinner</small>
+<div className="d-flex flex-wrap pb-4 m-n1">
+<small className="bg-light rounded py-1 px-3 m-1"><i className="fa fa-bed text-primary me-2"></i>3 Bed</small>
+<small className="bg-light rounded py-1 px-3 m-1"><i className="fa fa-bath text-primary me-2"></i>2 Bath</small>
+<small className="bg-light rounded py-1 px-3 m-1"><i className="fa fa-wifi text-primary me-2"></i>Wifi</small>
+<small className="bg-light rounded py-1 px-3 m-1"><i className="fa fa-tv text-primary me-2"></i>TV</small>
+<small className="bg-light rounded py-1 px-3 m-1"><i className="fa fa-fan text-primary me-2"></i>AC</small>
+<small className="bg-light rounded py-1 px-3 m-1"><i className="fa fa-user-cog text-primary me-2"></i>Laundry</small>
+<small className="bg-light rounded py-1 px-3 m-1"><i className="fa fa-utensils text-primary me-2"></i>Dinner</small>
 </div>
 <p>Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut
 magna lorem. Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet
@@ -55,42 +336,42 @@ sanctus et. Ipsum sit gubergren dolores et, consetetur justo invidunt at et
 aliquyam ut et vero clita. Diam sea sea no sed dolores diam nonumy, gubergren
 sit stet no diam kasd vero.
 </p>
-<p class="mb-5">Voluptua est takimata stet invidunt sed rebum nonumy stet, clita aliquyam dolores
+<p className="mb-5">Voluptua est takimata stet invidunt sed rebum nonumy stet, clita aliquyam dolores
 vero stet consetetur elitr takimata rebum sanctus. Sit sed accusam stet sit
 nonumy kasd diam dolores, sanctus lorem kasd duo dolor dolor vero sit et. Labore
 ipsum duo sanctus amet eos et. Consetetur no sed et aliquyam ipsum justo et,
 clita lorem sit vero amet amet est dolor elitr, stet et no diam sit. Dolor erat
 justo dolore sit invidunt.
 </p>
-<div class="tab-class wow fadeInUp" data-wow-delay="0.1s">
-<ul class="nav nav-pills d-flex justify-content-between border-bottom mb-4">
-<li class="nav-item">
-<a class="d-flex align-items-center py-3 active" data-bs-toggle="pill" href="#tab-1">
-<i class="fa fa-eye text-primary me-2"></i>
-<h6 class="mb-0">Overview</h6>
+<div className="tab-class wow fadeInUp" data-wow-delay="0.1s">
+<ul className="nav nav-pills d-flex justify-content-between border-bottom mb-4">
+<li className="nav-item">
+<a className="d-flex align-items-center py-3 active" data-bs-toggle="pill" href="#tab-1">
+<i className="fa fa-eye text-primary me-2"></i>
+<h6 className="mb-0">Overview</h6>
 </a>
 </li>
-<li class="nav-item">
-<a class="d-flex align-items-center py-3" data-bs-toggle="pill" href="#tab-2">
-<i class="fa fa-dollar text-primary me-2"></i>
-<h6 class="mb-0">Pricing</h6>
+<li className="nav-item">
+<a className="d-flex align-items-center py-3" data-bs-toggle="pill" href="#tab-2">
+<i className="fa fa-dollar text-primary me-2"></i>
+<h6 className="mb-0">Pricing</h6>
 </a>
 </li>
-<li class="nav-item">
-<a class="d-flex align-items-center py-3" data-bs-toggle="pill" href="#tab-3">
-<i class="fa fa-map-marker-alt text-primary me-2"></i>
-<h6 class="mb-0">Location</h6>
+<li className="nav-item">
+<a className="d-flex align-items-center py-3" data-bs-toggle="pill" href="#tab-3">
+<i className="fa fa-map-marker-alt text-primary me-2"></i>
+<h6 className="mb-0">Location</h6>
 </a>
 </li>
-<li class="nav-item">
-<a class="d-flex align-items-center py-3" data-bs-toggle="pill" href="#tab-4">
-<i class="fa fa-star text-primary me-2"></i>
-<h6 class="mb-0">Reviews(3)</h6>
+<li className="nav-item">
+<a className="d-flex align-items-center py-3" data-bs-toggle="pill" href="#tab-4">
+<i className="fa fa-star text-primary me-2"></i>
+<h6 className="mb-0">Reviews(3)</h6>
 </a>
 </li>
 </ul>
-<div class="tab-content">
-<div id="tab-1" class="tab-pane fade show p-0 active">
+<div className="tab-content">
+<div id="tab-1" className="tab-pane fade show p-0 active">
 <p>Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut
 magna lorem. Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet
 amet magna accusam consetetur eirmod. Kasd accusam sit ipsum sadipscing et at at
@@ -106,7 +387,7 @@ clita lorem sit vero amet amet est dolor elitr, stet et no diam sit. Dolor erat
 justo dolore sit invidunt.
 </p>
 </div>
-<div id="tab-2" class="tab-pane fade show p-0">
+<div id="tab-2" className="tab-pane fade show p-0">
 <p>Voluptua est takimata stet invidunt sed rebum nonumy stet, clita aliquyam dolores
 vero stet consetetur elitr takimata rebum sanctus. Sit sed accusam stet sit
 nonumy kasd diam dolores, sanctus lorem kasd duo dolor dolor vero sit et. Labore
@@ -114,143 +395,143 @@ ipsum duo sanctus amet eos et. Consetetur no sed et aliquyam ipsum justo et,
 clita lorem sit vero amet amet est dolor elitr, stet et no diam sit. Dolor erat
 justo dolore sit invidunt.
 </p>
-<div class="row g-4">
-<div class="col-sm-6 d-flex align-items-center justify-content-between">
+<div className="row g-4">
+<div className="col-sm-6 d-flex align-items-center justify-content-between">
 <span>Nightly:</span>
-<hr class="flex-grow-1 my-0 mx-3" />
+<hr className="flex-grow-1 my-0 mx-3" />
 <span>$100</span>
 </div>
-<div class="col-sm-6 d-flex align-items-center justify-content-between">
+<div className="col-sm-6 d-flex align-items-center justify-content-between">
 <span>Weekly:</span>
-<hr class="flex-grow-1 my-0 mx-3" />
+<hr className="flex-grow-1 my-0 mx-3" />
 <span>$100</span>
 </div>
-<div class="col-sm-6 d-flex align-items-center justify-content-between">
+<div className="col-sm-6 d-flex align-items-center justify-content-between">
 <span>Monthly:</span>
-<hr class="flex-grow-1 my-0 mx-3" />
+<hr className="flex-grow-1 my-0 mx-3" />
 <span>$100</span>
 </div>
-<div class="col-sm-6 d-flex align-items-center justify-content-between">
+<div className="col-sm-6 d-flex align-items-center justify-content-between">
 <span>Weekends:</span>
-<hr class="flex-grow-1 my-0 mx-3" />
+<hr className="flex-grow-1 my-0 mx-3" />
 <span>$100</span>
 </div>
-<div class="col-sm-6 d-flex align-items-center justify-content-between">
+<div className="col-sm-6 d-flex align-items-center justify-content-between">
 <span>Additional Guest:</span>
-<hr class="flex-grow-1 my-0 mx-3" />
+<hr className="flex-grow-1 my-0 mx-3" />
 <span>$100</span>
 </div>
-<div class="col-sm-6 d-flex align-items-center justify-content-between">
+<div className="col-sm-6 d-flex align-items-center justify-content-between">
 <span>Security Deposit:</span>
-<hr class="flex-grow-1 my-0 mx-3" />
+<hr className="flex-grow-1 my-0 mx-3" />
 <span>$100</span>
 </div>
 </div>
 </div>
-<div id="tab-3" class="tab-pane fade show p-0">
-<div class="row g-4 mb-4">
-<div class="col-md-4 d-flex align-items-center">
-<div class="flex-shrink-0 border rounded p-1 me-3" style={{width: "45px", height: "45px"}}>
-<div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-<i class="fa fa-map-marker-alt text-primary"></i>
+<div id="tab-3" className="tab-pane fade show p-0">
+<div className="row g-4 mb-4">
+<div className="col-md-4 d-flex align-items-center">
+<div className="flex-shrink-0 border rounded p-1 me-3" style={{width: "45px", height: "45px"}}>
+<div className="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+<i className="fa fa-map-marker-alt text-primary"></i>
 </div>
 </div>
 <span>123 Street, New York, USA</span>
 </div>
-<div class="col-md-4 d-flex align-items-center">
-<div class="flex-shrink-0 border rounded p-1 me-3" style={{width: "45px", height: "45px"}}>
-<div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-<i class="fa fa-phone-alt text-primary"></i>
+<div className="col-md-4 d-flex align-items-center">
+<div className="flex-shrink-0 border rounded p-1 me-3" style={{width: "45px", height: "45px"}}>
+<div className="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+<i className="fa fa-phone-alt text-primary"></i>
 </div>
 </div>
 <span>+012 345 67890</span>
 </div>
-<div class="col-md-4 d-flex align-items-center">
-<div class="flex-shrink-0 border rounded p-1 me-3" style={{width: "45px", height: "45px"}}>
-<div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-<i class="fa fa-envelope text-primary"></i>
+<div className="col-md-4 d-flex align-items-center">
+<div className="flex-shrink-0 border rounded p-1 me-3" style={{width: "45px", height: "45px"}}>
+<div className="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+<i className="fa fa-envelope text-primary"></i>
 </div>
 </div>
-<span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="432a2d252c03263b222e332f266d202c2e">[email&#160;protected]</a></span>
+<span><a href="/cdn-cgi/l/email-protection" className="__cf_email__" data-cfemail="432a2d252c03263b222e332f266d202c2e">[email&#160;protected]</a></span>
 </div>
 </div>
-<iframe class="position-relative rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd" frameborder="0" style={{minHeight: "350px", border:"0"}} allowfullscreen aria-hidden="false" tabindex="0"></iframe>
+<iframe className="position-relative rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd" frameborder="0" style={{minHeight: "350px", border:"0"}} allowfullscreen aria-hidden="false" tabindex="0"></iframe>
 </div>
-<div id="tab-4" class="tab-pane fade show p-0">
-<div class="mb-4">
-<h4 class="mb-4">3 Reviews</h4>
-<div class="d-flex mb-4">
-<img src="/hotelier/img/user.jpg" class="img-fluid rounded" style={{width: "45px", height: "45px"}} alt="" />
-<div class="ps-3">
-<h6>John Doe <small class="text-body fw-normal fst-italic">01 Jan 2045</small></h6>
-<div class="mb-2">
-<small class="fa fa-star text-primary"></small>
-<small class="fa fa-star text-primary"></small>
-<small class="fa fa-star text-primary"></small>
-<small class="fa fa-star text-primary"></small>
-<small class="fa fa-star text-primary"></small>
+<div id="tab-4" className="tab-pane fade show p-0">
+<div className="mb-4">
+<h4 className="mb-4">3 Reviews</h4>
+<div className="d-flex mb-4">
+<img src="/hotelier/img/user.jpg" className="img-fluid rounded" style={{width: "45px", height: "45px"}} alt="" />
+<div className="ps-3">
+<h6>John Doe <small className="text-body fw-normal fst-italic">01 Jan 2045</small></h6>
+<div className="mb-2">
+<small className="fa fa-star text-primary"></small>
+<small className="fa fa-star text-primary"></small>
+<small className="fa fa-star text-primary"></small>
+<small className="fa fa-star text-primary"></small>
+<small className="fa fa-star text-primary"></small>
 </div>
-<p class="mb-2">Diam amet duo labore stet elitr invidunt ea clita ipsum voluptua, tempor labore
+<p className="mb-2">Diam amet duo labore stet elitr invidunt ea clita ipsum voluptua, tempor labore
 accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed eirmod</p>
-<a href><i class="fa fa-reply me-2"></i> Reply</a>
+<a href><i className="fa fa-reply me-2"></i> Reply</a>
 </div>
 </div>
-<div class="d-flex mb-4">
-<img src="/hotelier/img/user.jpg" class="img-fluid rounded" style={{width: "45px", height: "45px"}} alt="" />
-<div class="ps-3">
-<h6>John Doe <small class="text-body fw-normal fst-italic">01 Jan 2045</small></h6>
-<div class="mb-2">
-<small class="fa fa-star text-primary"></small>
-<small class="fa fa-star text-primary"></small>
-<small class="fa fa-star text-primary"></small>
-<small class="fa fa-star text-primary"></small>
-<small class="fa fa-star text-primary"></small>
+<div className="d-flex mb-4">
+<img src="/hotelier/img/user.jpg" className="img-fluid rounded" style={{width: "45px", height: "45px"}} alt="" />
+<div className="ps-3">
+<h6>John Doe <small className="text-body fw-normal fst-italic">01 Jan 2045</small></h6>
+<div className="mb-2">
+<small className="fa fa-star text-primary"></small>
+<small className="fa fa-star text-primary"></small>
+<small className="fa fa-star text-primary"></small>
+<small className="fa fa-star text-primary"></small>
+<small className="fa fa-star text-primary"></small>
 </div>
-<p class="mb-2">Diam amet duo labore stet elitr invidunt ea clita ipsum voluptua, tempor labore
+<p className="mb-2">Diam amet duo labore stet elitr invidunt ea clita ipsum voluptua, tempor labore
 accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed eirmod</p>
-<a href><i class="fa fa-reply me-2"></i> Reply</a>
+<a href><i className="fa fa-reply me-2"></i> Reply</a>
 </div>
 </div>
-<div class="d-flex ms-5 mb-4">
-<img src="/hotelier/img/user.jpg" class="img-fluid rounded" style={{width: "45px", height: "45px"}} alt="" />
-<div class="ps-3">
-<h6>John Doe <small class="text-body fw-normal fst-italic">01 Jan 2045</small></h6>
-<div class="mb-2">
-<small class="fa fa-star text-primary"></small>
-<small class="fa fa-star text-primary"></small>
-<small class="fa fa-star text-primary"></small>
-<small class="fa fa-star text-primary"></small>
-<small class="fa fa-star text-primary"></small>
+<div className="d-flex ms-5 mb-4">
+<img src="/hotelier/img/user.jpg" className="img-fluid rounded" style={{width: "45px", height: "45px"}} alt="" />
+<div className="ps-3">
+<h6>John Doe <small className="text-body fw-normal fst-italic">01 Jan 2045</small></h6>
+<div className="mb-2">
+<small className="fa fa-star text-primary"></small>
+<small className="fa fa-star text-primary"></small>
+<small className="fa fa-star text-primary"></small>
+<small className="fa fa-star text-primary"></small>
+<small className="fa fa-star text-primary"></small>
 </div>
-<p class="mb-2">Diam amet duo labore stet elitr invidunt ea clita ipsum voluptua, tempor labore
+<p className="mb-2">Diam amet duo labore stet elitr invidunt ea clita ipsum voluptua, tempor labore
 accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed eirmod</p>
-<a href><i class="fa fa-reply me-2"></i> Reply</a>
+<a href><i className="fa fa-reply me-2"></i> Reply</a>
 </div>
 </div>
 </div>
-<div class="bg-light p-4 p-md-5">
-<h4 class="mb-4">Leave A Review</h4>
+<div className="bg-light p-4 p-md-5">
+<h4 className="mb-4">Leave A Review</h4>
 <form>
-<div class="row g-3">
-<div class="col-12 d-flex align-items-center">
-<h6 class="mb-0 me-2">Rate Me:</h6>
-<div id="halfstarsReview" class="fs-3 me-2"></div>
-<input type="text" value readonly id="halfstarsInput" class="border-0 bg-transparent" style={{width: "30px"}} />
+<div className="row g-3">
+<div className="col-12 d-flex align-items-center">
+<h6 className="mb-0 me-2">Rate Me:</h6>
+<div id="halfstarsReview" className="fs-3 me-2"></div>
+<input type="text" value readonly id="halfstarsInput" className="border-0 bg-transparent" style={{width: "30px"}} />
 </div>
-<div class="col-12 col-sm-6">
-<input type="text" class="form-control bg-white border-0" placeholder="Your Name" style={{height: "55px"}}/>
+<div className="col-12 col-sm-6">
+<input type="text" className="form-control bg-white border-0" placeholder="Your Name" style={{height: "55px"}}/>
 </div>
-<div class="col-12 col-sm-6">
-<input type="email" class="form-control bg-white border-0" placeholder="Your Email" style={{height: "55px"}} />
+<div className="col-12 col-sm-6">
+<input type="email" className="form-control bg-white border-0" placeholder="Your Email" style={{height: "55px"}} />
 </div>
-<div class="col-12">
-<input type="text" class="form-control bg-white border-0" placeholder="Website" style={{height: "55px"}} />
+<div className="col-12">
+<input type="text" className="form-control bg-white border-0" placeholder="Website" style={{height: "55px"}} />
 </div>
-<div class="col-12">
-<textarea class="form-control bg-white border-0" rows="5" placeholder="Comment"></textarea>
+<div className="col-12">
+<textarea className="form-control bg-white border-0" rows="5" placeholder="Comment"></textarea>
 </div>
-<div class="col-12">
-<button class="btn btn-primary w-100 py-3" type="submit">Leave Your Review</button>
+<div className="col-12">
+<button className="btn btn-primary w-100 py-3" type="submit">Leave Your Review</button>
 </div>
 </div>
 </form>
@@ -870,6 +1151,8 @@ export function Header(){
                                 <Link href="/service" className="nav-item nav-link">Services</Link>
                                 <Link href="/rooms" className="nav-item nav-link">Rooms</Link>
                                 <Link href="/our-team" className="nav-item nav-link">Our Team</Link>
+                                <Link href="/gallery" className="nav-item nav-link">Gallery</Link>
+                                <Link href="/faqs" className="nav-item nav-link">Faqs</Link>
                                 <Link href="/contact" className="nav-item nav-link">Contact</Link>
                             </div>
                         </div>
@@ -970,7 +1253,7 @@ export function AboutUs(){
                                 </div>
                             </div>
                         </div>
-                        <a className="btn btn-primary py-3 px-5 mt-2" href="">Explore More</a>
+                        <Link className="btn btn-primary py-3 px-5 mt-2" href="/rooms">Explore More</Link>
                     </div>
                     <div className="col-lg-6">
                         <div className="row g-3">
@@ -1442,18 +1725,19 @@ export function BackToTopBtn(){
 
 export function PageNotFound(){
     return (
-        <div class="container-xxl py-5 wow fadeIn" data-wow-delay="0.1s">
-          <div class="container text-center">
-            <div class="row justify-content-center">
-              <div class="col-lg-6">
-                <i class="bi bi-exclamation-triangle display-1 text-primary"></i>
-                <h1 class="display-1">404</h1>
-                <h1 class="mb-4">Page Not Found</h1>
-                <p class="mb-4">We’re sorry, the page you have looked for does not exist in our website! Maybe go to our home page or try to use a search?</p>
-                <a class="btn btn-primary py-3 px-5" href>Go Back To Home</a>
+        <div className="container-xxl py-5 wow fadeIn" data-wow-delay="0.1s">
+          <div className="container text-center">
+            <div className="row justify-content-center">
+              <div className="col-lg-6">
+                <i className="bi bi-exclamation-triangle display-1 text-primary"></i>
+                <h1 className="display-1">404</h1>
+                <h1 className="mb-4">Page Not Found</h1>
+                <p className="mb-4">We’re sorry, the page you have looked for does not exist in our website! Maybe go to our home page or try to use a search?</p>
+                <a className="btn btn-primary py-3 px-5" href>Go Back To Home</a>
               </div>
             </div>
           </div>
         </div>
     );
 }
+
