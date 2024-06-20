@@ -567,15 +567,15 @@ export function Contactus(){
                         <div className="row gy-4">
                             <div className="col-md-4">
                                 <h6 className="section-title text-start text-primary text-uppercase">Booking</h6>
-                                <p><i className="fa fa-envelope-open text-primary me-2"></i>book@example.com</p>
+                                <p><i className="fa fa-envelope-open text-primary me-2"></i>book@tourhotelier.com</p>
                             </div>
                             <div className="col-md-4">
                                 <h6 className="section-title text-start text-primary text-uppercase">General</h6>
-                                <p><i className="fa fa-envelope-open text-primary me-2"></i>info@example.com</p>
+                                <p><i className="fa fa-envelope-open text-primary me-2"></i>info@tourhotelier.com</p>
                             </div>
                             <div className="col-md-4">
-                                <h6 className="section-title text-start text-primary text-uppercase">Technical</h6>
-                                <p><i className="fa fa-envelope-open text-primary me-2"></i>tech@example.com</p>
+                                <h6 className="section-title text-start text-primary text-uppercase">Enquiry</h6>
+                                <p><i className="fa fa-envelope-open text-primary me-2"></i>enquiry@tourhotelier.com</p>
                             </div>
                         </div>
                     </div>
@@ -1696,9 +1696,7 @@ export function Footer(){
                 <div className="copyright">
                     <div className="row">
                         <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a className="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
-							Designed By <a className="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-                            <br />Distributed By: <a className="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                            &copy; <a className="border-bottom" href="#">Hotelier</a>, All Right Reserved. 							
                         </div>
                         <div className="col-md-6 text-center text-md-end">
                             <div className="footer-menu">
