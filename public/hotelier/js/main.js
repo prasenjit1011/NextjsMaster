@@ -103,24 +103,25 @@
 
 
     // Rating
-    $("#zzhalfstarsReview").rating({
-        "half": true,
-        "color": "#FEA116",
-        "click": function (e) {
-            console.log(e);
-            $("#halfstarsInput").val(e.stars);
-        }
-    });
+    // $("#zzhalfstarsReview").rating({
+    //     "half": true,
+    //     "color": "#FEA116",
+    //     "click": function (e) {
+    //         console.log(e);
+    //         $("#halfstarsInput").val(e.stars);
+    //     }
+    // });
 
 
 
     
 
     // Gallery isotope and filter
-    var portfolioIsotope = $('.portfolio-container').isotope({
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-    });
+    // var portfolioIsotope = $('.portfolio-container').isotope({
+    //     itemSelector: '.portfolio-item',
+    //     layoutMode: 'fitRows'
+    // });
+
     $('#portfolio-flters li').on('click', function () {
         $("#portfolio-flters li").removeClass('active');
         $(this).addClass('active');
