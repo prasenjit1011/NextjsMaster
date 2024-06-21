@@ -1,5 +1,5 @@
 import { Banner, BannerAboutus, BannerRooms } from "@/components/banner";
-import { AboutusContent, Booking, Facility, FacilityDetails, NewRoomsList, NewsLetter, Room, RoomDetails, RoomsList, RoomsListPage, Teams } from "@/components/hotelier";
+import { AboutusContent, BookRoom, Booking, BookingFrm, Facility, FacilityDetails, NewRoomsList, NewsLetter, Room, RoomDetails, RoomsList, RoomsListPage, Teams } from "@/components/hotelier";
 import Image from "next/image";
 
 export default function Rooms(){
@@ -8,6 +8,7 @@ export default function Rooms(){
             <Banner title="Our Rooms" />
             <Booking />
             <RoomDetails />
+            <BookingFrm />
             <Room />
             <NewsLetter />
         </>
