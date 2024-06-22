@@ -1,7 +1,10 @@
-import { Contactus } from "@/components/common";
+import { BannerStatic, Contactus } from "@/components/common";
 
 export default function ContactusPage(){
     return (
-        <Contactus />
+        <>
+            <BannerStatic pagename="Contact" />
+            <Contactus />
+        </>
     );
 }

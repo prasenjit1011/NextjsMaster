@@ -6,53 +6,50 @@ import { useEffect, useState } from 'react';
 
 export function Contactus(){
     return (
-        <>
-            <BannerStatic pagename="Contact" />
-            <div className="container-fluid contact py-5">
-                <div className="container py-5">
-                    <div className="p-5 bg-light rounded">
-                        <div className="row g-4">
-                            <div className="col-12">
-                                <div className="text-center mx-auto" style={{maxWidth: "700px"}}>
-                                    <h1 className="text-primary">Get in touch</h1>                                    
+        <div className="container-fluid contact py-2">
+            <div className="container py-2">
+                <div className="p-5 bg-light rounded">
+                    <div className="row g-4">
+                        <div className="col-12">
+                            <div className="text-center mx-auto" style={{maxWidth: "700px"}}>
+                                <h1 className="text-primary">Get in touch</h1>                                    
+                            </div>
+                        </div>
+                        <div className="col-lg-7">
+                            <form action="" className="">
+                                <input type="text" className="w-100 form-control border-0 py-3 mb-4" placeholder="Your Name" />
+                                <input type="email" className="w-100 form-control border-0 py-3 mb-4" placeholder="Enter Your Email" />
+                                <textarea className="w-100 form-control border-0 mb-4" rows="5" cols="10" placeholder="Your Message"></textarea>
+                                <button className="w-100 btn form-control border-secondary py-3 bg-white text-primary " type="submit">Submit</button>
+                            </form>
+                        </div>
+                        <div className="col-lg-5">
+                            <div className="d-flex p-4 rounded mb-4 bg-white">
+                                <i className="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
+                                <div>
+                                    <h4>Address</h4>
+                                    <p className="mb-2">123 Street New York.USA</p>
                                 </div>
                             </div>
-                            <div className="col-lg-7">
-                                <form action="" className="">
-                                    <input type="text" className="w-100 form-control border-0 py-3 mb-4" placeholder="Your Name" />
-                                    <input type="email" className="w-100 form-control border-0 py-3 mb-4" placeholder="Enter Your Email" />
-                                    <textarea className="w-100 form-control border-0 mb-4" rows="5" cols="10" placeholder="Your Message"></textarea>
-                                    <button className="w-100 btn form-control border-secondary py-3 bg-white text-primary " type="submit">Submit</button>
-                                </form>
+                            <div className="d-flex p-4 rounded mb-4 bg-white">
+                                <i className="fas fa-envelope fa-2x text-primary me-4"></i>
+                                <div>
+                                    <h4>Mail Us</h4>
+                                    <p className="mb-2">info@example.com</p>
+                                </div>
                             </div>
-                            <div className="col-lg-5">
-                                <div className="d-flex p-4 rounded mb-4 bg-white">
-                                    <i className="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
-                                    <div>
-                                        <h4>Address</h4>
-                                        <p className="mb-2">123 Street New York.USA</p>
-                                    </div>
-                                </div>
-                                <div className="d-flex p-4 rounded mb-4 bg-white">
-                                    <i className="fas fa-envelope fa-2x text-primary me-4"></i>
-                                    <div>
-                                        <h4>Mail Us</h4>
-                                        <p className="mb-2">info@example.com</p>
-                                    </div>
-                                </div>
-                                <div className="d-flex p-4 rounded bg-white">
-                                    <i className="fa fa-phone-alt fa-2x text-primary me-4"></i>
-                                    <div>
-                                        <h4>Telephone</h4>
-                                        <p className="mb-2">(+012) 3456 7890</p>
-                                    </div>
+                            <div className="d-flex p-4 rounded bg-white">
+                                <i className="fa fa-phone-alt fa-2x text-primary me-4"></i>
+                                <div>
+                                    <h4>Telephone</h4>
+                                    <p className="mb-2">(+012) 3456 7890</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 
@@ -540,208 +537,20 @@ export function BannerCategory(){
 }
 
 export function ProductRegular(){
+    let products = [];
+    for (let i = 0; i < 9; i++) {
+        products.push(<ProductDaily key={i} />);
+    }
+
     return (        
         <div className="container-fluid py-2">
             <div className="container py-2">
                 <div className="text-center mx-auto mb-5" style={{maxWidth: "700px"}}>
-                    <h1 className="display-4">Bestseller Products</h1>
+                    <h1 className="display-4">Daily Products</h1>
                     <p>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
                 </div>
                 <div className="row g-4">
-                    <div className="col-lg-6 col-xl-4">
-                        <div className="p-4 rounded bg-light">
-                            <div className="row align-items-center">
-                                <div className="col-6">
-                                    <img src="eshop/img/best-product-1.jpg" className="img-fluid rounded-circle w-100" alt="" />
-                                </div>
-                                <div className="col-6">
-                                    <a href="#" className="h5">Organic Tomato</a>
-                                    <div className="d-flex my-3">
-                                        <i className="fas fa-star text-primary"></i>
-                                        <i className="fas fa-star text-primary"></i>
-                                        <i className="fas fa-star text-primary"></i>
-                                        <i className="fas fa-star text-primary"></i>
-                                        <i className="fas fa-star"></i>
-                                    </div>
-                                    <h4 className="mb-3">3.12 $</h4>
-                                    <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 col-xl-4">
-                        <div className="p-4 rounded bg-light">
-                            <div className="row align-items-center">
-                                <div className="col-6">
-                                    <img src="eshop/img/best-product-2.jpg" className="img-fluid rounded-circle w-100" alt="" />
-                                </div>
-                                <div className="col-6">
-                                    <a href="#" className="h5">Organic Tomato</a>
-                                    <div className="d-flex my-3">
-                                        <i className="fas fa-star text-primary"></i>
-                                        <i className="fas fa-star text-primary"></i>
-                                        <i className="fas fa-star text-primary"></i>
-                                        <i className="fas fa-star text-primary"></i>
-                                        <i className="fas fa-star"></i>
-                                    </div>
-                                    <h4 className="mb-3">3.12 $</h4>
-                                    <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 col-xl-4">
-                        <div className="p-4 rounded bg-light">
-                            <div className="row align-items-center">
-                                <div className="col-6">
-                                    <img src="eshop/img/best-product-3.jpg" className="img-fluid rounded-circle w-100" alt="" />
-                                </div>
-                                <div className="col-6">
-                                    <a href="#" className="h5">Organic Tomato</a>
-                                    <div className="d-flex my-3">
-                                        <i className="fas fa-star text-primary"></i>
-                                        <i className="fas fa-star text-primary"></i>
-                                        <i className="fas fa-star text-primary"></i>
-                                        <i className="fas fa-star text-primary"></i>
-                                        <i className="fas fa-star"></i>
-                                    </div>
-                                    <h4 className="mb-3">3.12 $</h4>
-                                    <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 col-xl-4">
-                        <div className="p-4 rounded bg-light">
-                            <div className="row align-items-center">
-                                <div className="col-6">
-                                    <img src="eshop/img/best-product-4.jpg" className="img-fluid rounded-circle w-100" alt="" />
-                                </div>
-                                <div className="col-6">
-                                    <a href="#" className="h5">Organic Tomato</a>
-                                    <div className="d-flex my-3">
-                                        <i className="fas fa-star text-primary"></i>
-                                        <i className="fas fa-star text-primary"></i>
-                                        <i className="fas fa-star text-primary"></i>
-                                        <i className="fas fa-star text-primary"></i>
-                                        <i className="fas fa-star"></i>
-                                    </div>
-                                    <h4 className="mb-3">3.12 $</h4>
-                                    <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 col-xl-4">
-                        <div className="p-4 rounded bg-light">
-                            <div className="row align-items-center">
-                                <div className="col-6">
-                                    <img src="eshop/img/best-product-5.jpg" className="img-fluid rounded-circle w-100" alt="" />
-                                </div>
-                                <div className="col-6">
-                                    <a href="#" className="h5">Organic Tomato</a>
-                                    <div className="d-flex my-3">
-                                        <i className="fas fa-star text-primary"></i>
-                                        <i className="fas fa-star text-primary"></i>
-                                        <i className="fas fa-star text-primary"></i>
-                                        <i className="fas fa-star text-primary"></i>
-                                        <i className="fas fa-star"></i>
-                                    </div>
-                                    <h4 className="mb-3">3.12 $</h4>
-                                    <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 col-xl-4">
-                        <div className="p-4 rounded bg-light">
-                            <div className="row align-items-center">
-                                <div className="col-6">
-                                    <img src="eshop/img/best-product-6.jpg" className="img-fluid rounded-circle w-100" alt="" />
-                                </div>
-                                <div className="col-6">
-                                    <a href="#" className="h5">Organic Tomato</a>
-                                    <div className="d-flex my-3">
-                                        <i className="fas fa-star text-primary"></i>
-                                        <i className="fas fa-star text-primary"></i>
-                                        <i className="fas fa-star text-primary"></i>
-                                        <i className="fas fa-star text-primary"></i>
-                                        <i className="fas fa-star"></i>
-                                    </div>
-                                    <h4 className="mb-3">3.12 $</h4>
-                                    <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-6 col-lg-6 col-xl-3">
-                        <div className="text-center">
-                            <img src="eshop/img/fruite-item-1.jpg" className="img-fluid rounded" alt="" />
-                            <div className="py-4">
-                                <a href="#" className="h5">Organic Tomato</a>
-                                <div className="d-flex my-3 justify-content-center">
-                                    <i className="fas fa-star text-primary"></i>
-                                    <i className="fas fa-star text-primary"></i>
-                                    <i className="fas fa-star text-primary"></i>
-                                    <i className="fas fa-star text-primary"></i>
-                                    <i className="fas fa-star"></i>
-                                </div>
-                                <h4 className="mb-3">3.12 $</h4>
-                                <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-6 col-lg-6 col-xl-3">
-                        <div className="text-center">
-                            <img src="eshop/img/fruite-item-2.jpg" className="img-fluid rounded" alt="" />
-                            <div className="py-4">
-                                <a href="#" className="h5">Organic Tomato</a>
-                                <div className="d-flex my-3 justify-content-center">
-                                    <i className="fas fa-star text-primary"></i>
-                                    <i className="fas fa-star text-primary"></i>
-                                    <i className="fas fa-star text-primary"></i>
-                                    <i className="fas fa-star text-primary"></i>
-                                    <i className="fas fa-star"></i>
-                                </div>
-                                <h4 className="mb-3">3.12 $</h4>
-                                <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-6 col-lg-6 col-xl-3">
-                        <div className="text-center">
-                            <img src="eshop/img/fruite-item-3.jpg" className="img-fluid rounded" alt="" />
-                            <div className="py-4">
-                                <a href="#" className="h5">Organic Tomato</a>
-                                <div className="d-flex my-3 justify-content-center">
-                                    <i className="fas fa-star text-primary"></i>
-                                    <i className="fas fa-star text-primary"></i>
-                                    <i className="fas fa-star text-primary"></i>
-                                    <i className="fas fa-star text-primary"></i>
-                                    <i className="fas fa-star"></i>
-                                </div>
-                                <h4 className="mb-3">3.12 $</h4>
-                                <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-6 col-lg-6 col-xl-3">
-                        <div className="text-center">
-                            <img src="eshop/img/fruite-item-4.jpg" className="img-fluid rounded" alt="" />
-                            <div className="py-2">
-                                <a href="#" className="h5">Organic Tomato</a>
-                                <div className="d-flex my-3 justify-content-center">
-                                    <i className="fas fa-star text-primary"></i>
-                                    <i className="fas fa-star text-primary"></i>
-                                    <i className="fas fa-star text-primary"></i>
-                                    <i className="fas fa-star text-primary"></i>
-                                    <i className="fas fa-star"></i>
-                                </div>
-                                <h4 className="mb-3">3.12 $</h4>
-                                <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
+                    {products}
                 </div>
             </div>
         </div>
@@ -999,7 +808,7 @@ export function ComponentTestimonial(){
                                     </div>
                                     <div className="d-flex align-items-center flex-nowrap">
                                         <div className="bg-secondary rounded">
-                                            <img src="eshop/img/testimonial-2.jpg" className="img-fluid rounded" style={{width: "100px", height: "100px"}} alt="" />
+                                            <img src="eshop/img/testimonial-1.jpg" className="img-fluid rounded" style={{width: "100px", height: "100px"}} alt="" />
                                         </div>
                                         <div className="ms-4 d-block">
                                             <h4 className="text-dark">Client Name</h4>
@@ -1402,11 +1211,15 @@ function ProductListingSearch(){
 
 
 function Product({boxClass}){
+    const randNumber = Math.floor(Math.random()* (9 - 0 + 1));
+    const imgName = "eshop/img/best-product-"+randNumber+".jpg";
+
+    
     return (
         <div className={boxClass}>
             <div className="rounded position-relative fruite-item">
                 <div className="fruite-img">
-                    <img src="eshop/img/fruite-item-5.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                    <img src={imgName} className="img-fluid w-100 rounded-top" alt="" />
                 </div>
                 <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
                 <div className="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -1422,3 +1235,34 @@ function Product({boxClass}){
     );
 }
 
+function ProductDaily(){
+    const randNumber = Math.floor(Math.random()* (9 - 0 + 1));
+    const imgName = "eshop/img/p-"+randNumber+".png";
+    console.log('Random Number : '+ randNumber);
+
+    return (
+        <div className="col-lg-6 col-xl-4">
+            <div className="p-4 rounded bg-light">
+                <div className="row align-items-center">
+                    <div className="col-6">
+                        <img src={imgName} className="img-fluid rounded-circle w-100" alt="" />
+                    </div>
+                    <div className="col-6">
+                        <a href="#" className="h5">Organic Tomato</a>
+                        <div className="d-flex my-3">
+                            <i className="fas fa-star text-primary"></i>
+                            <i className="fas fa-star text-primary"></i>
+                            <i className="fas fa-star text-primary"></i>
+                            <i className="fas fa-star text-primary"></i>
+                            <i className="fas fa-star"></i>
+                        </div>
+                        <h4 className="mb-3">3.12 $</h4>
+                        <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+                    
