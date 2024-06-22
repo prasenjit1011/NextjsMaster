@@ -60,7 +60,7 @@ export function Contactus(){
 export function BannerStatic({pagename}){
     return (
         <div class="container-fluid page-header py-5">
-            <h1 class="text-center text-white display-6">Contact</h1>
+            <h1 class="text-center text-white display-6">{pagename}</h1>
             <ol class="breadcrumb justify-content-center mb-0">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                 <li class="breadcrumb-item active text-white">{pagename}</li>
@@ -460,8 +460,8 @@ export function ProductList(){
 
 export function ProductCategory(){
     return (
-        <div className="container-fluid service py-5">
-            <div className="container py-5">
+        <div className="container-fluid service py-2">
+            <div className="container py-2">
                 <div className="row g-4 justify-content-center">
                     <div className="col-md-6 col-lg-4">
                         <a href="#">
@@ -541,8 +541,8 @@ export function BannerCategory(){
 
 export function ProductRegular(){
     return (        
-        <div className="container-fluid py-5">
-            <div className="container py-5">
+        <div className="container-fluid py-2">
+            <div className="container py-2">
                 <div className="text-center mx-auto mb-5" style={{maxWidth: "700px"}}>
                     <h1 className="display-4">Bestseller Products</h1>
                     <p>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
@@ -750,8 +750,8 @@ export function ProductRegular(){
 
 export function TotalSale(){
     return (        
-        <div className="container-fluid py-5">
-            <div className="container py-5">
+        <div className="container-fluid">
+            <div className="container">
                 <div className="bg-light p-5 rounded">
                     <div className="row g-4 justify-content-center">
                         <div className="col-md-6 col-lg-6 col-xl-3">
@@ -791,8 +791,8 @@ export function TotalSale(){
 
 export function Testimonial(){
     return (        
-        <div className="container-fluid testimonial py-5">
-            <div className="container py-5">
+        <div className="container-fluid testimonial py-1">
+            <div className="container py-1">
                 <div className="testimonial-header text-center">
                     <h4 className="text-primary">Our Testimonial</h4>
                     <h1 className="display-5 mb-5 text-dark">Our Client Saying!</h1>
@@ -901,23 +901,18 @@ export function FooterMenu(){
                     <div className="col-lg-3 col-md-6">
                         <div className="d-flex flex-column text-start footer-item">
                             <h4 className="text-light mb-3">Shop Info</h4>
-                            <a className="btn-link" href="">About Us</a>
-                            <a className="btn-link" href="">Contact Us</a>
-                            <a className="btn-link" href="">Privacy Policy</a>
-                            <a className="btn-link" href="">Terms & Condition</a>
-                            <a className="btn-link" href="">Return Policy</a>
-                            <a className="btn-link" href="">FAQs & Help</a>
+                            <Link className="btn-link" href="/about">About Us</Link>
+                            <Link className="btn-link" href="/contact">Contact Us</Link>
+                            <Link className="btn-link" href="/privacy">Privacy Policy</Link>
+                            <Link className="btn-link" href="/faqs">FAQs & Help</Link>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-6">
                         <div className="d-flex flex-column text-start footer-item">
                             <h4 className="text-light mb-3">Account</h4>
-                            <a className="btn-link" href="">My Account</a>
-                            <a className="btn-link" href="">Shop details</a>
-                            <a className="btn-link" href="">Shopping Cart</a>
-                            <a className="btn-link" href="">Wishlist</a>
-                            <a className="btn-link" href="">Order History</a>
-                            <a className="btn-link" href="">International Orders</a>
+                            <Link className="btn-link" href="/myaccount">My Account</Link>
+                            <Link className="btn-link" href="/wishlist">Wishlist</Link>
+                            <Link className="btn-link" href="/orderlist">Order History</Link>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-6">
