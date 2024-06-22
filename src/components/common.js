@@ -221,14 +221,14 @@ export function ProductList(){
 
 
     return (
+        <>
+            
+            <div className="container-fluid zpage-header py-5"></div>
         <div className="container-fluid fruite py-5">
             <div className="container py-5">
                 <div className="tab-class text-center">
                     <div className="row g-4">
-                        <div className="col-lg-4 text-start">
-                            <h1>Our Products</h1>
-                        </div>
-                        <div className="col-lg-8 text-end">
+                        <div className="col-lg-12 text-end">
                             <ul className="nav nav-pills d-inline-flex text-center mb-5">
                                 <li className="nav-item">
                                     <a className="d-flex m-2 py-2 bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-1">
@@ -309,6 +309,7 @@ export function ProductList(){
                 </div>      
             </div>
         </div>
+        </>
     );
 }
 
@@ -853,44 +854,46 @@ export function ComponentOrganic(){
 export function ProductListing(){
 
     return (
-        <div className="container-fluid fruite py-5">
-            <div className="container py-5">
-                <h1 className="mb-4">Fresh fruits shop</h1>
-                <div className="row g-4">
-                    <div className="col-lg-12">
-                        <div className="row g-4">
-                            <div className="col-xl-3">
-                                <ProductSearch boxWidth="input-group w-100 mx-auto d-flex" />
-                            </div>
-                            <div className="col-6"></div>
-                            <div className="col-xl-3">
-                                <div className="bg-light ps-3 py-3 rounded d-flex justify-content-between mb-4">
-                                    <label for="fruits">Default Sorting:</label>
-                                    <select id="fruits" name="fruitlist" className="border-0 form-select-sm bg-light me-3" form="fruitform">
-                                        <option value="volvo">Nothing</option>
-                                        <option value="saab">Popularity</option>
-                                        <option value="opel">Organic</option>
-                                        <option value="audi">Fantastic</option>
-                                    </select>
+        <>
+            <div className="container-fluid zpage-header py-5"></div>
+            <div className="container-fluid fruite py-5">
+                <div className="container py-5">
+                    <div className="row g-4">
+                        <div className="col-lg-12">
+                            <div className="row g-4">
+                                <div className="col-xl-3">
+                                    <ProductSearch boxWidth="input-group w-100 mx-auto d-flex" />
                                 </div>
-                            </div>
-                        </div>
-
-                        <div className="row g-4">
-                            <div className="col-lg-3">
-                                <div className="row g-4">
-                                    <ProductFilter />
+                                <div className="col-6"></div>
+                                <div className="col-xl-3">
+                                    <div className="bg-light ps-3 py-3 rounded d-flex justify-content-between mb-4">
+                                        <label for="fruits">Default Sorting:</label>
+                                        <select id="fruits" name="fruitlist" className="border-0 form-select-sm bg-light me-3" form="fruitform">
+                                            <option value="volvo">Nothing</option>
+                                            <option value="saab">Popularity</option>
+                                            <option value="opel">Organic</option>
+                                            <option value="audi">Fantastic</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
 
+                            <div className="row g-4">
+                                <div className="col-lg-3">
+                                    <div className="row g-4">
+                                        <ProductFilter />
+                                    </div>
+                                </div>
 
-                            <ProductListingSearch />
+
+                                <ProductListingSearch />
+                            </div>
+
                         </div>
-
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 
