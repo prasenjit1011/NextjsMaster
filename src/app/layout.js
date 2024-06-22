@@ -10,6 +10,14 @@ export default function RootLayout({ children }) {
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta content="" name="keywords" />
         <meta content="" name="description" />
+        
+        <link href="/eshop/img/favicon.png" rel="icon" />
+        <link href="/eshop/img/favicon.png" rel="icon" />
+        <link rel="shortcut icon" href="/eshop/img/favicon.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/eshop/img/favicon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/eshop/img/favicon.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="/eshop/img/favicon.png"/>
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com"  crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet" precedence="default" /> 
