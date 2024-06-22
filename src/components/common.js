@@ -163,10 +163,7 @@ export function HeaderSearch(){
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div className="modal-body d-flex align-items-center">
-                        <div className="input-group w-75 mx-auto d-flex">
-                            <input type="search" className="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1" />
-                            <span id="search-icon-1" className="input-group-text p-3"><i className="fa fa-search"></i></span>
-                        </div>
+                        <ProductSearch boxWidth="input-group w-75 mx-auto d-flex" />
                     </div>
                 </div>
             </div>
@@ -1003,10 +1000,7 @@ export function ProductListing(){
                     <div className="col-lg-12">
                         <div className="row g-4">
                             <div className="col-xl-3">
-                                <div className="input-group w-100 mx-auto d-flex">
-                                    <input type="search" className="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1" />
-                                    <span id="search-icon-1" className="input-group-text p-3"><i className="fa fa-search"></i></span>
-                                </div>
+                                <ProductSearch boxWidth="input-group w-100 mx-auto d-flex" />
                             </div>
                             <div className="col-6"></div>
                             <div className="col-xl-3">
@@ -1179,6 +1173,7 @@ export function ProductListing(){
     );
 }
 
+
 function ProductListingSearch(){
     let products = [];
     for (let i = 0; i < 9; i++) {
@@ -1209,7 +1204,6 @@ function ProductListingSearch(){
 }
 
 
-
 function Product({boxClass}){
     const randNumber = Math.floor(Math.random()* (9 - 0 + 1));
     const imgName = "eshop/img/best-product-"+randNumber+".jpg";
@@ -1227,7 +1221,7 @@ function Product({boxClass}){
                     <p>{boxClass} Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                     <div className="d-flex justify-content-between flex-lg-wrap">
                         <p className="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                        <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                        <Link href="/product/1" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</Link>
                     </div>
                 </div>
             </div>
@@ -1248,7 +1242,7 @@ function ProductDaily(){
                         <img src={imgName} className="img-fluid rounded-circle w-100" alt="" />
                     </div>
                     <div className="col-6">
-                        <a href="#" className="h5">Organic Tomato</a>
+                        <Link href="/product/1" className="h5">Organic Tomato</Link>
                         <div className="d-flex my-3">
                             <i className="fas fa-star text-primary"></i>
                             <i className="fas fa-star text-primary"></i>
@@ -1257,7 +1251,7 @@ function ProductDaily(){
                             <i className="fas fa-star"></i>
                         </div>
                         <h4 className="mb-3">3.12 $</h4>
-                        <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                        <Link href="/product/1" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</Link>
                     </div>
                 </div>
             </div>
@@ -1265,4 +1259,18 @@ function ProductDaily(){
     );
 }
 
-                    
+function ProductSearch({boxWidth}){
+    return (
+        <div className={boxWidth}>
+            <input type="search" className="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1" />
+            <span id="search-icon-1" className="input-group-text p-3"><i className="fa fa-search"></i></span>
+        </div>
+    );
+}
+
+
+export function ProductDetails(){
+    return (
+        <>hii</>
+    );
+}
