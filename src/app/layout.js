@@ -32,26 +32,10 @@ export default function RootLayout({ children }) {
         <body >
             <Header />
             <HeaderSearch />
-            <BannerHome />
-            <ProductList />
-            <ProductCategory />
-            <BannerCategory />
-            <ProductRegular />
-            <TotalSale />
-            <Testimonial />
-            <OurService />
+            { children }            
             <FooterMenu />
             <Footer />
 
-            {/* <ComponentB />
-            <ComponentC />
-            <ComponentE />
-            <ComponentF />
-            <ComponentG />
-            <ComponentH />
-            <ComponentJ />
-            <ComponentK />
-            <ComponentL />  */}
             <a href="#" className="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i className="fa fa-arrow-up"></i></a>   
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
