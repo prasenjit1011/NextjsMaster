@@ -188,11 +188,11 @@ export function BannerHome(){
                         <div id="carouselId" className="carousel slide position-relative" data-bs-ride="carousel">
                             <div className="carousel-inner" role="listbox">
                                 <div className="carousel-item active rounded">
-                                    <img src="eshop/img/hero-img-1.png" className="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide" />
+                                    <img src="/eshop/img/hero-img-1.png" className="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide" />
                                     <a href="#" className="btn px-4 py-2 text-white rounded">Fruites</a>
                                 </div>
                                 <div className="carousel-item rounded">
-                                    <img src="eshop/img/hero-img-2.jpg" className="img-fluid w-100 h-100 rounded" alt="Second slide" />
+                                    <img src="/eshop/img/hero-img-2.jpg" className="img-fluid w-100 h-100 rounded" alt="Second slide" />
                                     <a href="#" className="btn px-4 py-2 text-white rounded">Vesitables</a>
                                 </div>
                             </div>
@@ -264,7 +264,7 @@ export function ProductList(){
                             <div className="row g-4">
                                 <div className="col-lg-12">
                                     <div className="row g-4">
-                                        {products}                                        
+                                        {products}
                                     </div>
                                 </div>
                             </div>
@@ -273,38 +273,7 @@ export function ProductList(){
                             <div className="row g-4">
                                 <div className="col-lg-12">
                                     <div className="row g-4">
-                                        <div className="col-md-6 col-lg-4 col-xl-3">
-                                            <div className="rounded position-relative fruite-item">
-                                                <div className="fruite-img">
-                                                    <img src="eshop/img/fruite-item-5.jpg" className="img-fluid w-100 rounded-top" alt="" />
-                                                </div>
-                                                <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
-                                                <div className="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>Grapes</h4>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-                                                    <div className="d-flex justify-content-between flex-lg-wrap">
-                                                        <p className="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-md-6 col-lg-4 col-xl-3">
-                                            <div className="rounded position-relative fruite-item">
-                                                <div className="fruite-img">
-                                                    <img src="eshop/img/fruite-item-2.jpg" className="img-fluid w-100 rounded-top" alt="" />
-                                                </div>
-                                                <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
-                                                <div className="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>Raspberries</h4>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-                                                    <div className="d-flex justify-content-between flex-lg-wrap">
-                                                        <p className="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        {products}
                                     </div>
                                 </div>
                             </div>
@@ -313,38 +282,7 @@ export function ProductList(){
                             <div className="row g-4">
                                 <div className="col-lg-12">
                                     <div className="row g-4">
-                                        <div className="col-md-6 col-lg-4 col-xl-3">
-                                            <div className="rounded position-relative fruite-item">
-                                                <div className="fruite-img">
-                                                    <img src="eshop/img/fruite-item-1.jpg" className="img-fluid w-100 rounded-top" alt="" />
-                                                </div>
-                                                <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
-                                                <div className="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>Oranges</h4>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-                                                    <div className="d-flex justify-content-between flex-lg-wrap">
-                                                        <p className="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-md-6 col-lg-4 col-xl-3">
-                                            <div className="rounded position-relative fruite-item">
-                                                <div className="fruite-img">
-                                                    <img src="eshop/img/fruite-item-6.jpg" className="img-fluid w-100 rounded-top" alt="" />
-                                                </div>
-                                                <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
-                                                <div className="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>Apple</h4>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-                                                    <div className="d-flex justify-content-between flex-lg-wrap">
-                                                        <p className="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        {products}
                                     </div>
                                 </div>
                             </div>
@@ -353,38 +291,7 @@ export function ProductList(){
                             <div className="row g-4">
                                 <div className="col-lg-12">
                                     <div className="row g-4">
-                                        <div className="col-md-6 col-lg-4 col-xl-3">
-                                            <div className="rounded position-relative fruite-item">
-                                                <div className="fruite-img">
-                                                    <img src="eshop/img/fruite-item-5.jpg" className="img-fluid w-100 rounded-top" alt="" />
-                                                </div>
-                                                <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
-                                                <div className="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>Grapes</h4>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-                                                    <div className="d-flex justify-content-between flex-lg-wrap">
-                                                        <p className="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-md-6 col-lg-4 col-xl-3">
-                                            <div className="rounded position-relative fruite-item">
-                                                <div className="fruite-img">
-                                                    <img src="eshop/img/fruite-item-4.jpg" className="img-fluid w-100 rounded-top" alt="" />
-                                                </div>
-                                                <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
-                                                <div className="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>Apricots</h4>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-                                                    <div className="d-flex justify-content-between flex-lg-wrap">
-                                                        <p className="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        {products}
                                     </div>
                                 </div>
                             </div>
@@ -393,54 +300,7 @@ export function ProductList(){
                             <div className="row g-4">
                                 <div className="col-lg-12">
                                     <div className="row g-4">
-                                        <div className="col-md-6 col-lg-4 col-xl-3">
-                                            <div className="rounded position-relative fruite-item">
-                                                <div className="fruite-img">
-                                                    <img src="eshop/img/fruite-item-3.jpg" className="img-fluid w-100 rounded-top" alt="" />
-                                                </div>
-                                                <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
-                                                <div className="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>Banana</h4>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-                                                    <div className="d-flex justify-content-between flex-lg-wrap">
-                                                        <p className="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-md-6 col-lg-4 col-xl-3">
-                                            <div className="rounded position-relative fruite-item">
-                                                <div className="fruite-img">
-                                                    <img src="eshop/img/fruite-item-2.jpg" className="img-fluid w-100 rounded-top" alt="" />
-                                                </div>
-                                                <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
-                                                <div className="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>Raspberries</h4>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-                                                    <div className="d-flex justify-content-between flex-lg-wrap">
-                                                        <p className="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-md-6 col-lg-4 col-xl-3">
-                                            <div className="rounded position-relative fruite-item">
-                                                <div className="fruite-img">
-                                                    <img src="eshop/img/fruite-item-1.jpg" className="img-fluid w-100 rounded-top" alt="" />
-                                                </div>
-                                                <div className="text-white bg-secondary px-3 py-1 rounded position-absolute" style={{top: "10px", left: "10px"}}>Fruits</div>
-                                                <div className="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>Oranges</h4>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-                                                    <div className="d-flex justify-content-between flex-lg-wrap">
-                                                        <p className="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary"><i className="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        {products}
                                     </div>
                                 </div>
                             </div>
@@ -460,7 +320,7 @@ export function ProductCategory(){
                     <div className="col-md-6 col-lg-4">
                         <a href="#">
                             <div className="service-item bg-secondary rounded border border-secondary">
-                                <img src="eshop/img/featur-1.jpg" className="img-fluid rounded-top w-100" alt="" />
+                                <img src="/eshop/img/featur-1.jpg" className="img-fluid rounded-top w-100" alt="" />
                                 <div className="px-4 rounded-bottom">
                                     <div className="service-content bg-primary text-center p-4 rounded">
                                         <h5 className="text-white">Fresh Apples</h5>
@@ -473,7 +333,7 @@ export function ProductCategory(){
                     <div className="col-md-6 col-lg-4">
                         <a href="#">
                             <div className="service-item bg-dark rounded border border-dark">
-                                <img src="eshop/img/featur-2.jpg" className="img-fluid rounded-top w-100" alt="" />
+                                <img src="/eshop/img/featur-2.jpg" className="img-fluid rounded-top w-100" alt="" />
                                 <div className="px-4 rounded-bottom">
                                     <div className="service-content bg-light text-center p-4 rounded">
                                         <h5 className="text-primary">Tasty Fruits</h5>
@@ -486,7 +346,7 @@ export function ProductCategory(){
                     <div className="col-md-6 col-lg-4">
                         <a href="#">
                             <div className="service-item bg-primary rounded border border-primary">
-                                <img src="eshop/img/featur-3.jpg" className="img-fluid rounded-top w-100" alt="" />
+                                <img src="/eshop/img/featur-3.jpg" className="img-fluid rounded-top w-100" alt="" />
                                 <div className="px-4 rounded-bottom">
                                     <div className="service-content bg-secondary text-center p-4 rounded">
                                         <h5 className="text-white">Exotic Vegitable</h5>
@@ -517,7 +377,7 @@ export function BannerCategory(){
                     </div>
                     <div className="col-lg-6">
                         <div className="position-relative">
-                            <img src="eshop/img/baner-1.png" className="img-fluid w-100 rounded" alt="" />
+                            <img src="/eshop/img/baner-1.png" className="img-fluid w-100 rounded" alt="" />
                             <div className="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute" style={{width: "140px", height: "140px", top: "0", left: "0"}}>
                                 <h1 style={{fontSize: "100px"}}>1</h1>
                                 <div className="d-flex flex-column">
@@ -728,7 +588,7 @@ export function FooterMenu(){
                             <p>Email: Example@gmail.com</p>
                             <p>Phone: +0123 4567 8910</p>
                             <p>Payment Accepted</p>
-                            <img src="eshop/img/payment.png" className="img-fluid" alt="" />
+                            <img src="/eshop/img/payment.png" className="img-fluid" alt="" />
                         </div>
                     </div>
                 </div>
@@ -805,7 +665,7 @@ export function ComponentTestimonial(){
                                     </div>
                                     <div className="d-flex align-items-center flex-nowrap">
                                         <div className="bg-secondary rounded">
-                                            <img src="eshop/img/testimonial-1.jpg" className="img-fluid rounded" style={{width: "100px", height: "100px"}} alt="" />
+                                            <img src="/eshop/img/testimonial-1.jpg" className="img-fluid rounded" style={{width: "100px", height: "100px"}} alt="" />
                                         </div>
                                         <div className="ms-4 d-block">
                                             <h4 className="text-dark">Client Name</h4>
@@ -846,7 +706,7 @@ export function ComponentTestimonial(){
                     </div>
                     <div className="d-flex align-items-center flex-nowrap">
                         <div className="bg-secondary rounded">
-                            <img src="eshop/img/testimonial-2.jpg" className="img-fluid rounded" style={{width: "100px", height: "100px"}} alt="" />
+                            <img src="/eshop/img/testimonial-2.jpg" className="img-fluid rounded" style={{width: "100px", height: "100px"}} alt="" />
                         </div>
                         <div className="ms-4 d-block">
                             <h4 className="text-dark">Client Name</h4>
@@ -871,7 +731,7 @@ export function ComponentTestimonial(){
                     </div>
                     <div className="d-flex align-items-center flex-nowrap">
                         <div className="bg-secondary rounded">
-                            <img src="eshop/img/testimonial-1.jpg" className="img-fluid rounded" style={{width: "100px", height: "100px"}} alt="" />
+                            <img src="/eshop/img/testimonial-1.jpg" className="img-fluid rounded" style={{width: "100px", height: "100px"}} alt="" />
                         </div>
                         <div className="ms-4 d-block">
                             <h4 className="text-dark">Client Name</h4>
@@ -896,7 +756,7 @@ export function ComponentTestimonial(){
                     </div>
                     <div className="d-flex align-items-center flex-nowrap">
                         <div className="bg-secondary rounded">
-                            <img src="eshop/img/testimonial-1.jpg" className="img-fluid rounded" style={{width: "100px", height: "100px"}} alt="" />
+                            <img src="/eshop/img/testimonial-1.jpg" className="img-fluid rounded" style={{width: "100px", height: "100px"}} alt="" />
                         </div>
                         <div className="ms-4 d-block">
                             <h4 className="text-dark">Client Name</h4>
@@ -969,7 +829,7 @@ export function ComponentOrganic(){
                         return (
                             <div key={x} className="border border-primary rounded position-relative vesitable-item" style={{ width:"260px"}} >
                                 <div className="vesitable-img">
-                                    <img src="eshop/img/vegetable-item-1.jpg" className="img-fluid w-100 rounded-top" alt="" />
+                                    <img src="/eshop/img/vegetable-item-1.jpg" className="img-fluid w-100 rounded-top" alt="" />
                                 </div>
                                 <div className="text-white bg-primary px-3 py-1 rounded position-absolute" style={{top: "10px", right: "10px"}}>Vegetable</div>
                                 <div className="p-4 rounded-bottom">
@@ -1139,7 +999,7 @@ function ProductFilterD(){
             <h4 className="mb-3">Featured products</h4>
             <div className="d-flex align-items-center justify-content-start">
                 <div className="rounded me-4" style={{width: "100px", height: "100px"}}>
-                    <img src="eshop/img/featur-1.jpg" className="img-fluid rounded" alt="" />
+                    <img src="/eshop/img/featur-1.jpg" className="img-fluid rounded" alt="" />
                 </div>
                 <div>
                     <h6 className="mb-2">Big Banana</h6>
@@ -1158,7 +1018,7 @@ function ProductFilterD(){
             </div>
             <div className="d-flex align-items-center justify-content-start">
                 <div className="rounded me-4" style={{width: "100px", height: "100px"}}>
-                    <img src="eshop/img/featur-2.jpg" className="img-fluid rounded" alt="" />
+                    <img src="/eshop/img/featur-2.jpg" className="img-fluid rounded" alt="" />
                 </div>
                 <div>
                     <h6 className="mb-2">Big Banana</h6>
@@ -1177,7 +1037,7 @@ function ProductFilterD(){
             </div>
             <div className="d-flex align-items-center justify-content-start">
                 <div className="rounded me-4" style={{width: "100px", height: "100px"}}>
-                    <img src="eshop/img/featur-3.jpg" className="img-fluid rounded" alt="" />
+                    <img src="/eshop/img/featur-3.jpg" className="img-fluid rounded" alt="" />
                 </div>
                 <div>
                     <h6 className="mb-2">Big Banana</h6>
@@ -1206,7 +1066,7 @@ function ProductFilterE(){
     return (
         <div className="col-lg-12">
             <div className="position-relative">
-                <img src="eshop/img/banner-fruits.jpg" className="img-fluid w-100 rounded" alt="" />
+                <img src="/eshop/img/banner-fruits.jpg" className="img-fluid w-100 rounded" alt="" />
                 <div className="position-absolute" style={{top: "50%", right: "10px", transform: "translateY(-50%)"}}>
                     <h3 className="text-secondary fw-bold">Fresh <br /> Fruits <br /> Banner</h3>
                 </div>
@@ -1316,6 +1176,62 @@ function ProductSearch({boxWidth}){
 
 export function ProductDetails(){
     return (
-        <>hii</>
+        <div class="container-fluid py-5 mt-5">
+            <div class="container py-5">
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-8 col-xl-9">
+                        <div class="row g-4">
+                        
+                            <div class="col-lg-6">
+                                <div class="border rounded">
+                                    <a href="#">
+                                        <img src="/eshop/img/single-item.jpg" class="img-fluid rounded" alt="Image" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h4 class="fw-bold mb-3">Brocoli</h4>
+                                <p class="mb-3">Category: Vegetables</p>
+                                <h5 class="fw-bold mb-3">3,35 $</h5>
+                                <div class="d-flex mb-4">
+                                    <i class="fa fa-star text-secondary"></i>
+                                    <i class="fa fa-star text-secondary"></i>
+                                    <i class="fa fa-star text-secondary"></i>
+                                    <i class="fa fa-star text-secondary"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p class="mb-4">The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc.</p>
+                                <p class="mb-4">Susp endisse ultricies nisi vel quam suscipit. Sabertooth peacock flounder; chain pickerel hatchetfish, pencilfish snailfish</p>
+                                <div class="input-group quantity mb-5" style={{width: "100px"}}>
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-minus rounded-circle bg-light border" >
+                                            <i class="fa fa-minus"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" class="form-control form-control-sm text-center border-0" value="1" />
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-plus rounded-circle bg-light border">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary">
+                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> 
+                                    Add to cart
+                                </a>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3">
+                        <div class="row g-4 fruite">
+                            <ProductFilter />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 }
