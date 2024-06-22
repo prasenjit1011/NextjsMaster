@@ -105,8 +105,8 @@ export function Header(){
                     <div className="collapse navbar-collapse bg-white" id="navbarCollapse">
                         <div className="navbar-nav mx-auto">
                             <Link href="/" className="nav-item nav-link active">Home</Link>
-                            <Link href="shop" className="nav-item nav-link">Shop</Link>
-                            <Link href="product" className="nav-item nav-link">Product</Link>
+                            <Link href="/shop" className="nav-item nav-link">Shop</Link>
+                            <Link href="/product" className="nav-item nav-link">Product</Link>
                             <div className="nav-item dropdown" style={{display:"none"}}>
                                 <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                 <div className="dropdown-menu m-0 bg-secondary rounded-0">
@@ -117,7 +117,7 @@ export function Header(){
                                 </div>
                             </div>
                             <Link href="/service" className="nav-item nav-link">Service</Link>
-                            <Link href="contact" className="nav-item nav-link">Contact</Link>
+                            <Link href="/contact" className="nav-item nav-link">Contact</Link>
                         </div>
                         <div className="d-flex m-3 me-0">
                             <button className="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i className="fas fa-search text-primary"></i></button>
