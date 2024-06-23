@@ -199,7 +199,7 @@ export function BookRoom(){
     }, []);
     
     if(!loading){
-        return <></>;
+        //return <></>;
     }
 
     return (
@@ -288,45 +288,43 @@ function FaqSupport(){
 
 function FaqsList(){
     return (
-
-                        <div className="accordion accordion-custom" id="accordionExample">
-
-                            <div className="accordion-item wow fadeInUp" data-wow-delay="0.1s">
-                                <h2 className="accordion-header" id="headingOne">
-                                    <button className="accordion-button fw-semi-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        How to build a website?
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div className="accordion-body">
-                                        Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="accordion-item wow fadeInUp" data-wow-delay="0.2s">
-<h2 className="accordion-header" id="headingTwo">
-<button className="accordion-button collapsed fw-semi-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-How long will it take to get a new website?
-</button>
-</h2>
-<div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-<div className="accordion-body">
-Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-</div>
-</div>
-</div>
-<div className="accordion-item wow fadeInUp" data-wow-delay="0.3s">
-<h2 className="accordion-header" id="headingThree">
-<button className="accordion-button collapsed fw-semi-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-Do you only create HTML websites?
-</button>
-</h2>
-<div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-<div className="accordion-body">
-Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-</div>
-</div>
-</div>
+        <div className="accordion accordion-custom" id="accordionExample">
+            <div className="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+                <h2 className="accordion-header" id="headingOne">
+                    <button className="accordion-button fw-semi-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        How to build a website?
+                    </button>
+                </h2>
+                <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div className="accordion-body">
+                        Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                    </div>
+                </div>
+            </div>
+            <div className="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+                <h2 className="accordion-header" id="headingTwo">
+                    <button className="accordion-button collapsed fw-semi-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How long will it take to get a new website?
+                    </button>
+                </h2>
+        <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div className="accordion-body">
+                Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+            </div>
+        </div>
+    </div>
+    <div className="accordion-item wow fadeInUp" data-wow-delay="0.3s">
+        <h2 className="accordion-header" id="headingThree">
+            <button className="accordion-button collapsed fw-semi-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Do you only create HTML websites?
+            </button>
+        </h2>
+        <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div className="accordion-body">
+                Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+            </div>
+        </div>
+    </div>
 <div className="accordion-item wow fadeInUp" data-wow-delay="0.4s">
 <h2 className="accordion-header" id="headingFour">
 <button className="accordion-button collapsed fw-semi-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
@@ -499,7 +497,7 @@ export function Gallery(){
 
 
 
-export function RoomDetails(){
+export function RoomDetails({room}){
     return (
         <>
 
@@ -511,7 +509,7 @@ export function RoomDetails(){
 <div id="room-carousel" className="carousel slide mb-5 wow fadeIn" data-bs-ride="carousel" data-wow-delay="0.1s">
 <div className="carousel-inner">
 <div className="carousel-item active">
-<img className="w-100" src="/hotelier/img/carousel-1.jpg" alt="Image" />
+<img className="w-100" src={"/hotelier/img/room-1.jpg"} alt="Image" />
 </div>
 <div className="carousel-item">
 <img className="w-100" src="/hotelier/img/carousel-2.jpg" alt="Image" />
@@ -946,191 +944,174 @@ export function RoomsFaq(){
     );
 }
 
-export function RoomsList(){
+function Pagination(){
     return (
-<div className="col-lg-8">
-<div className="row room-item m-0 mb-4 wow fadeInUp" data-wow-delay="0.1s">
-<div className="col-md-5 col-lg-12 col-xl-5 p-0" style={{minHeight: "300px"}}>
-<div className="position-relative h-100">
-<img className="position-absolute w-100 h-100" src="/hotelier/img/room-1.jpg" alt="" style={{objectFit: "cover"}} />
-</div>
-</div>
-<div className="col-md-7 col-lg-12 col-xl-7 h-100 px-0">
-<div className="p-4">
-<div className="d-flex align-items-center justify-content-between mb-3">
-<small className="bg-primary text-white rounded py-1 px-3">$100/Night</small>
-<div className="ps-2">
-<small className="fa fa-star text-primary"></small>
-<small className="fa fa-star text-primary"></small>
-<small className="fa fa-star text-primary"></small>
-<small className="fa fa-star text-primary"></small>
-<small className="fa fa-star text-primary"></small>
-</div>
-</div>
-<h5 className="mb-3">Junior Suite</h5>
-<div className="d-flex mb-3">
-<small className="border-end me-3 pe-3"><i className="fa fa-bed text-primary me-2"></i>3 Bed</small>
-<small className="border-end me-3 pe-3"><i className="fa fa-bath text-primary me-2"></i>2 Bath</small>
-<small><i className="fa fa-wifi text-primary me-2"></i>Wifi</small>
-</div>
-<p className="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-</div>
-<div className="d-flex justify-content-between border-top mt-auto p-4">
-<Link className="btn btn-sm btn-primary rounded py-2 px-4" href="/rooms/1">View Detail</Link>
-<Link className="btn btn-sm btn-dark rounded py-2 px-4" href="/rooms/1">Book Now</Link>
-</div>
-</div>
-</div>
-<div className="row room-item m-0 mb-4 wow fadeInUp" data-wow-delay="0.1s">
-<div className="col-md-5 col-lg-12 col-xl-5 p-0" style={{minHeight: "300px"}}>
-<div className="position-relative h-100">
-<img className="position-absolute w-100 h-100" src="/hotelier/img/room-2.jpg" alt="" style={{objectFit: "cover"}} />
-</div>
-</div>
-<div className="col-md-7 col-lg-12 col-xl-7 h-100 px-0">
-<div className="p-4">
-<div className="d-flex align-items-center justify-content-between mb-3">
-<small className="bg-primary text-white rounded py-1 px-3">$100/Night</small>
-<div className="ps-2">
-<small className="fa fa-star text-primary"></small>
-<small className="fa fa-star text-primary"></small>
-<small className="fa fa-star text-primary"></small>
-<small className="fa fa-star text-primary"></small>
-<small className="fa fa-star text-primary"></small>
-</div>
-</div>
-<h5 className="mb-3">Junior Suite</h5>
-<div className="d-flex mb-3">
-<small className="border-end me-3 pe-3"><i className="fa fa-bed text-primary me-2"></i>3 Bed</small>
-<small className="border-end me-3 pe-3"><i className="fa fa-bath text-primary me-2"></i>2 Bath</small>
-<small><i className="fa fa-wifi text-primary me-2"></i>Wifi</small>
-</div>
-<p className="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-</div>
-<div className="d-flex justify-content-between border-top mt-auto p-4">
-<Link className="btn btn-sm btn-primary rounded py-2 px-4" href="/rooms/1">View Detail</Link>
-<Link className="btn btn-sm btn-dark rounded py-2 px-4" href="/rooms/1">Book Now</Link>
-</div>
-</div>
-</div>
-<div className="row room-item m-0 mb-4 wow fadeInUp" data-wow-delay="0.1s">
-<div className="col-md-5 col-lg-12 col-xl-5 p-0" style={{minHeight: "300px"}}>
-<div className="position-relative h-100">
-<img className="position-absolute w-100 h-100" src="/hotelier/img/room-3.jpg" alt="" style={{objectFit: "cover"}} />
-</div>
-</div>
-<div className="col-md-7 col-lg-12 col-xl-7 h-100 px-0">
-<div className="p-4">
-<div className="d-flex align-items-center justify-content-between mb-3">
-<small className="bg-primary text-white rounded py-1 px-3">$100/Night</small>
-<div className="ps-2">
-<small className="fa fa-star text-primary"></small>
-<small className="fa fa-star text-primary"></small>
-<small className="fa fa-star text-primary"></small>
-<small className="fa fa-star text-primary"></small>
-<small className="fa fa-star text-primary"></small>
-</div>
-</div>
-<h5 className="mb-3">Junior Suite</h5>
-<div className="d-flex mb-3">
-<small className="border-end me-3 pe-3"><i className="fa fa-bed text-primary me-2"></i>3 Bed</small>
-<small className="border-end me-3 pe-3"><i className="fa fa-bath text-primary me-2"></i>2 Bath</small>
-<small><i className="fa fa-wifi text-primary me-2"></i>Wifi</small>
-</div>
-<p className="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-</div>
-<div className="d-flex justify-content-between border-top mt-auto p-4">
-<Link className="btn btn-sm btn-primary rounded py-2 px-4" href="/rooms/1">View Detail</Link>
-<Link className="btn btn-sm btn-dark rounded py-2 px-4" href="/rooms/1">Book Now</Link>
-</div>
-</div>
-</div>
-<div className="row room-item m-0 mb-4 wow fadeInUp" data-wow-delay="0.1s">
-<div className="col-md-5 col-lg-12 col-xl-5 p-0" style={{minHeight: "300px"}}>
-<div className="position-relative h-100">
-<img className="position-absolute w-100 h-100" src="/hotelier/img/room-1.jpg" alt="" style={{objectFit: "cover"}} />
-</div>
-</div>
-<div className="col-md-7 col-lg-12 col-xl-7 h-100 px-0">
-<div className="p-4">
-<div className="d-flex align-items-center justify-content-between mb-3">
-<small className="bg-primary text-white rounded py-1 px-3">$100/Night</small>
-<div className="ps-2">
-<small className="fa fa-star text-primary"></small>
-<small className="fa fa-star text-primary"></small>
-<small className="fa fa-star text-primary"></small>
-<small className="fa fa-star text-primary"></small>
-<small className="fa fa-star text-primary"></small>
-</div>
-</div>
-<h5 className="mb-3">Junior Suite</h5>
-<div className="d-flex mb-3">
-<small className="border-end me-3 pe-3"><i className="fa fa-bed text-primary me-2"></i>3 Bed</small>
-<small className="border-end me-3 pe-3"><i className="fa fa-bath text-primary me-2"></i>2 Bath</small>
-<small><i className="fa fa-wifi text-primary me-2"></i>Wifi</small>
-</div>
-<p className="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-</div>
-<div className="d-flex justify-content-between border-top mt-auto p-4">
-<a className="btn btn-sm btn-primary rounded py-2 px-4" href>View Detail</a>
-<a className="btn btn-sm btn-dark rounded py-2 px-4" href>Book Now</a>
-</div>
-</div>
-</div>
-<div className="row room-item m-0 mb-4 wow fadeInUp" data-wow-delay="0.1s">
-<div className="col-md-5 col-lg-12 col-xl-5 p-0" style={{minHeight: "300px"}}>
-<div className="position-relative h-100">
-<img className="position-absolute w-100 h-100" src="/hotelier/img/room-2.jpg" alt="" style={{objectFit: "cover"}} />
-</div>
-</div>
-<div className="col-md-7 col-lg-12 col-xl-7 h-100 px-0">
-<div className="p-4">
-<div className="d-flex align-items-center justify-content-between mb-3">
-<small className="bg-primary text-white rounded py-1 px-3">$100/Night</small>
-<div className="ps-2">
-<small className="fa fa-star text-primary"></small>
-<small className="fa fa-star text-primary"></small>
-<small className="fa fa-star text-primary"></small>
-<small className="fa fa-star text-primary"></small>
-<small className="fa fa-star text-primary"></small>
-</div>
-</div>
-<h5 className="mb-3">Junior Suite</h5>
-<div className="d-flex mb-3">
-<small className="border-end me-3 pe-3"><i className="fa fa-bed text-primary me-2"></i>3 Bed</small>
-<small className="border-end me-3 pe-3"><i className="fa fa-bath text-primary me-2"></i>2 Bath</small>
-<small><i className="fa fa-wifi text-primary me-2"></i>Wifi</small>
-</div>
-<p className="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-</div>
-<div className="d-flex justify-content-between border-top mt-auto p-4">
-<a className="btn btn-sm btn-primary rounded py-2 px-4" href>View Detail</a>
-<a className="btn btn-sm btn-dark rounded py-2 px-4" href>Book Now</a>
-</div>
-</div>
-</div>
-<div className="row wow fadeInUp" data-wow-delay="0.1s">
-<div className="col-12">
-<nav aria-label="Page navigation">
-<ul className="pagination justify-content-center m-0">
-<li className="page-item disabled">
-<a className="page-link rounded-0" href="#" aria-label="Previous">
-<span aria-hidden="true"><i className="bi bi-arrow-left"></i></span>
-</a>
-</li>
-<li className="page-item active"><a className="page-link" href="#">1</a></li>
-<li className="page-item"><a className="page-link" href="#">2</a></li>
-<li className="page-item"><a className="page-link" href="#">3</a></li>
-<li className="page-item">
-<a className="page-link rounded-0" href="#" aria-label="Next">
-<span aria-hidden="true"><i className="bi bi-arrow-right"></i></span>
-</a>
-</li>
-</ul>
-</nav>
-</div>
-</div>
-</div>
+        <nav aria-label="Page navigation">
+            <ul className="pagination justify-content-center m-0">
+                <li className="page-item disabled">
+                    <a className="page-link rounded-0" href="#" aria-label="Previous">
+                        <span aria-hidden="true"><i className="bi bi-arrow-left"></i></span>
+                    </a>
+                </li>
+                <li className="page-item active">
+                    <a className="page-link" href="#">1</a>
+                </li>
+                <li className="page-item">
+                    <a className="page-link" href="#">2</a>
+                </li>
+                <li className="page-item">
+                    <a className="page-link" href="#">3</a>
+                </li>
+                <li className="page-item">
+                    <a className="page-link rounded-0" href="#" aria-label="Next">
+                        <span aria-hidden="true"><i className="bi bi-arrow-right"></i></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    );
+}
+
+
+function RoomdataSingle({roomImg}){
+    const [loading, setLoading] = useState(0);
+    useEffect(()=>{
+        setLoading(1)
+    }, []);
+    
+    if(!loading){
+        return <></>;
+    }
+
+    let roomTitle = [
+            'CAMPTON PLACE',
+            'BENTOTA RESORT',
+            'BEKAL RESORT',
+            'BANJAAR TOLA',
+            'ARAVALI RESORT',
+            'SUPERIOR ROOM',
+            'TAJ CHANDIGARH',
+            'CIDADE DE GOA',
+            'CENTRE NEW TOWN',
+            'PRIVATE BALCONY KING ROOM'
+        ];
+
+    return (
+        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div className="room-item shadow rounded overflow-hidden">
+                <div className="position-relative">
+                    <img className="img-fluid" src={roomImg} alt="" />
+                    <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">
+                        ${parseInt(1000*Math.random())}/Night
+                    </small>
+                </div>
+                <div className="p-4 mt-2">
+                    <div className="d-flex justify-content-between mb-3">
+                        <h5 className="mb-0">{roomTitle[parseInt(10*Math.random())]}</h5>
+                        <div className="ps-2">
+                            <small className="fa fa-star text-primary"></small>
+                            <small className="fa fa-star text-primary"></small>
+                            <small className="fa fa-star text-primary"></small>
+                            <small className="fa fa-star text-primary"></small>
+                            <small className="fa fa-star text-primary"></small>
+                        </div>
+                    </div>
+                    <div className="d-flex mb-3">
+                        <small className="border-end me-3 pe-3"><i className="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                        <small className="border-end me-3 pe-3"><i className="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                        <small><i className="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                    </div>
+                    <p className="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                    <div className="d-flex justify-content-between">
+                        <Link className="btn btn-sm btn-primary rounded py-2 px-4" href="/rooms/1">View Detail</Link>
+                        <Link className="btn btn-sm btn-dark rounded py-2 px-4" href="/rooms/1">Book Now</Link>
+                    </div>
+                </div>
+            </div>
+        </div>      
+    );
+}
+
+
+function RoomSingle({roomImg}){
+    const [loading, setLoading] = useState(0);
+    useEffect(()=>{
+        setLoading(1)
+    }, []);
+    
+    if(!loading){
+        return <></>;
+    }
+
+    let roomTitle = [
+            'CAMPTON PLACE',
+            'BENTOTA RESORT',
+            'BEKAL RESORT',
+            'BANJAAR TOLA',
+            'ARAVALI RESORT',
+            'SUPERIOR ROOM',
+            'TAJ CHANDIGARH',
+            'CIDADE DE GOA',
+            'CENTRE NEW TOWN',
+            'PRIVATE BALCONY KING ROOM'
+        ];
+
+    console.log(parseInt(1000*Math.random()))
+    return (
+        <div className="row room-item m-0 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div className="col-md-5 col-lg-12 col-xl-5 p-0" style={{minHeight: "300px"}}>
+                <div className="position-relative h-100">
+                    <img className="position-absolute w-100 h-100" src={roomImg} alt="" style={{objectFit: "cover"}} />
+                </div>
+            </div>
+            <div className="col-md-7 col-lg-12 col-xl-7 h-100 px-0">
+                <div className="p-4">
+                    <div className="d-flex align-items-center justify-content-between mb-3">
+                        <small className="bg-primary text-white rounded py-1 px-3">${parseInt(1000*Math.random())}/Night</small>
+                        <div className="ps-2">
+                            <small className="fa fa-star text-primary"></small>
+                            <small className="fa fa-star text-primary"></small>
+                            <small className="fa fa-star text-primary"></small>
+                            <small className="fa fa-star text-primary"></small>
+                            <small className="fa fa-star text-primary"></small>
+                        </div>
+                    </div>
+                    <h5 className="mb-3">
+                        {roomTitle[parseInt(10*Math.random())]}
+                    </h5>
+                    <div className="d-flex mb-3">
+                        <small className="border-end me-3 pe-3"><i className="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                        <small className="border-end me-3 pe-3"><i className="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                        <small><i className="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                    </div>
+                    <p className="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                </div>
+                <div className="d-flex justify-content-between border-top mt-auto p-4">
+                    <Link className="btn btn-sm btn-primary rounded py-2 px-4" href="/rooms/1">View Detail</Link>
+                    <Link className="btn btn-sm btn-dark rounded py-2 px-4" href="/rooms/1">Book Now</Link>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export function RoomsList(){
+    let rooms = [];
+    rooms.push(<RoomSingle key="1" roomImg="/hotelier/img/room-1.jpg" />);
+    rooms.push(<RoomSingle key="2" roomImg="/hotelier/img/room-2.jpg" />);
+    rooms.push(<RoomSingle key="3" roomImg="/hotelier/img/room-3.jpg" />);
+    rooms.push(<RoomSingle key="4" roomImg="/hotelier/img/room-4.jpg" />);
+    rooms.push(<RoomSingle key="5" roomImg="/hotelier/img/room-5.jpg" />);
+    
+    return (
+        <div className="col-lg-8">
+            {rooms}
+            <div className="row wow fadeInUp" data-wow-delay="0.1s">
+                <div className="col-12">
+                    <Pagination />                    
+                </div>
+            </div>
+        </div>
     );
 }
 
@@ -1258,7 +1239,7 @@ export function FacilityDetails(){
 }
 
 
-export function AboutusContent(){
+export function AboutusContentNR(){
     return (
         <div className="container-xxl py-5">
             <div className="container">
@@ -1272,7 +1253,7 @@ export function AboutusContent(){
                                 <div className="border rounded p-1">
                                     <div className="border rounded text-center p-4">
                                         <i className="fa fa-hotel fa-2x text-primary mb-2"></i>
-                                        <h2 className="mb-1" data-toggle="counter-up">1234</h2>
+                                        <h2 className="mb-1" data-toggle="counter-up">75</h2>
                                         <p className="mb-0">Rooms</p>
                                     </div>
                                 </div>
@@ -1281,7 +1262,7 @@ export function AboutusContent(){
                                 <div className="border rounded p-1">
                                     <div className="border rounded text-center p-4">
                                         <i className="fa fa-users-cog fa-2x text-primary mb-2"></i>
-                                        <h2 className="mb-1" data-toggle="counter-up">1234</h2>
+                                        <h2 className="mb-1" data-toggle="counter-up">185</h2>
                                         <p className="mb-0">Staffs</p>
                                     </div>
                                 </div>
@@ -1290,7 +1271,7 @@ export function AboutusContent(){
                                 <div className="border rounded p-1">
                                     <div className="border rounded text-center p-4">
                                         <i className="fa fa-users fa-2x text-primary mb-2"></i>
-                                        <h2 className="mb-1" data-toggle="counter-up">1234</h2>
+                                        <h2 className="mb-1" data-toggle="counter-up">11045</h2>
                                         <p className="mb-0">Clients</p>
                                     </div>
                                 </div>
@@ -1433,20 +1414,30 @@ export function Booking(){
 
 
 export function AboutUs(){
+    const [loading, setLoading] = useState(0);
+    useEffect(()=>{
+        setLoading(1)
+    }, []);
+    
+    if(!loading){
+        return <></>;
+    }
+
     return (
         <div className="container-xxl py-5">
             <div className="container">
                 <div className="row g-5 align-items-center">
                     <div className="col-lg-6">
-                        <h6 className="section-title text-start text-primary text-uppercase">About Us</h6>
                         <h1 className="mb-4">Welcome to <span className="text-primary text-uppercase">Hotelier</span></h1>
-                        <p className="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        <p className="mb-4">
+                            Established in 1903, Hotelier is The Indian Hotels Company Limited’s (IHCL) iconic brand for the world’s most discerning travellers seeking authentic experiences in luxury and has been rated as India’s Strongest Brand as per Brand Finance India 100 Report 2023. From landmark city addresses to enchanting jungle safaris, and from idyllic resorts to authentic living Grand Palaces, each Taj hotel offers an unrivalled fusion of warm Indian hospitality, world-class service and modern luxury. Taj's unique portfolio comprises hotels across India, North America, United Kingdom, Africa, Middle East, Sri Lanka, Maldives, Bhutan and Nepal.
+                        </p>
                         <div className="row g-3 pb-4">
                             <div className="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
                                 <div className="border rounded p-1">
                                     <div className="border rounded text-center p-4">
                                         <i className="fa fa-hotel fa-2x text-primary mb-2"></i>
-                                        <h2 className="mb-1" data-toggle="counter-up">1234</h2>
+                                        <h2 className="mb-1" data-toggle="counter-up">75</h2>
                                         <p className="mb-0">Rooms</p>
                                     </div>
                                 </div>
@@ -1455,7 +1446,7 @@ export function AboutUs(){
                                 <div className="border rounded p-1">
                                     <div className="border rounded text-center p-4">
                                         <i className="fa fa-users-cog fa-2x text-primary mb-2"></i>
-                                        <h2 className="mb-1" data-toggle="counter-up">1234</h2>
+                                        <h2 className="mb-1" data-toggle="counter-up">185</h2>
                                         <p className="mb-0">Staffs</p>
                                     </div>
                                 </div>
@@ -1464,7 +1455,7 @@ export function AboutUs(){
                                 <div className="border rounded p-1">
                                     <div className="border rounded text-center p-4">
                                         <i className="fa fa-users fa-2x text-primary mb-2"></i>
-                                        <h2 className="mb-1" data-toggle="counter-up">1234</h2>
+                                        <h2 className="mb-1" data-toggle="counter-up">11245</h2>
                                         <p className="mb-0">Clients</p>
                                     </div>
                                 </div>
@@ -1495,105 +1486,25 @@ export function AboutUs(){
 }
 
 
+
 export function Room(){
+    let rooms = [];
+    rooms.push(<RoomdataSingle roomImg="/hotelier/img/room-1.jpg" />);
+    rooms.push(<RoomdataSingle roomImg="/hotelier/img/room-5.jpg" />);
+    rooms.push(<RoomdataSingle roomImg="/hotelier/img/room-4.jpg" />);
+    rooms.push(<RoomdataSingle roomImg="/hotelier/img/room-3.jpg" />);
+    rooms.push(<RoomdataSingle roomImg="/hotelier/img/room-6.jpg" />);
+    rooms.push(<RoomdataSingle roomImg="/hotelier/img/room-3.jpg" />);
+
     return (
-<div className="container-xxl py-5">
+        <div className="container-xxl py-5">
             <div className="container">
                 <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h6 className="section-title text-center text-primary text-uppercase">Our Rooms</h6>
                     <h1 className="mb-5">Explore Our <span className="text-primary text-uppercase">Rooms</span></h1>
                 </div>
                 <div className="row g-4">
-                    <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div className="room-item shadow rounded overflow-hidden">
-                            <div className="position-relative">
-                                <img className="img-fluid" src="/hotelier/img/room-1.jpg" alt="" />
-                                <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
-                            </div>
-                            <div className="p-4 mt-2">
-                                <div className="d-flex justify-content-between mb-3">
-                                    <h5 className="mb-0">Junior Suite</h5>
-                                    <div className="ps-2">
-                                        <small className="fa fa-star text-primary"></small>
-                                        <small className="fa fa-star text-primary"></small>
-                                        <small className="fa fa-star text-primary"></small>
-                                        <small className="fa fa-star text-primary"></small>
-                                        <small className="fa fa-star text-primary"></small>
-                                    </div>
-                                </div>
-                                <div className="d-flex mb-3">
-                                    <small className="border-end me-3 pe-3"><i className="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                                    <small className="border-end me-3 pe-3"><i className="fa fa-bath text-primary me-2"></i>2 Bath</small>
-                                    <small><i className="fa fa-wifi text-primary me-2"></i>Wifi</small>
-                                </div>
-                                <p className="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                                <div className="d-flex justify-content-between">
-                                    <Link className="btn btn-sm btn-primary rounded py-2 px-4" href="/rooms/1">View Detail</Link>
-                                    <Link className="btn btn-sm btn-dark rounded py-2 px-4" href="/rooms/1">Book Now</Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div className="room-item shadow rounded overflow-hidden">
-                            <div className="position-relative">
-                                <img className="img-fluid" src="/hotelier/img/room-2.jpg" alt="" />
-                                <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
-                            </div>
-                            <div className="p-4 mt-2">
-                                <div className="d-flex justify-content-between mb-3">
-                                    <h5 className="mb-0">Executive Suite</h5>
-                                    <div className="ps-2">
-                                        <small className="fa fa-star text-primary"></small>
-                                        <small className="fa fa-star text-primary"></small>
-                                        <small className="fa fa-star text-primary"></small>
-                                        <small className="fa fa-star text-primary"></small>
-                                        <small className="fa fa-star text-primary"></small>
-                                    </div>
-                                </div>
-                                <div className="d-flex mb-3">
-                                    <small className="border-end me-3 pe-3"><i className="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                                    <small className="border-end me-3 pe-3"><i className="fa fa-bath text-primary me-2"></i>2 Bath</small>
-                                    <small><i className="fa fa-wifi text-primary me-2"></i>Wifi</small>
-                                </div>
-                                <p className="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                                <div className="d-flex justify-content-between">
-                                    <Link className="btn btn-sm btn-primary rounded py-2 px-4" href="/rooms/1">View Detail</Link>
-                                    <Link className="btn btn-sm btn-dark rounded py-2 px-4" href="/rooms/1">Book Now</Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div className="room-item shadow rounded overflow-hidden">
-                            <div className="position-relative">
-                                <img className="img-fluid" src="/hotelier/img/room-3.jpg" alt="" />
-                                <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
-                            </div>
-                            <div className="p-4 mt-2">
-                                <div className="d-flex justify-content-between mb-3">
-                                    <h5 className="mb-0">Super Deluxe</h5>
-                                    <div className="ps-2">
-                                        <small className="fa fa-star text-primary"></small>
-                                        <small className="fa fa-star text-primary"></small>
-                                        <small className="fa fa-star text-primary"></small>
-                                        <small className="fa fa-star text-primary"></small>
-                                        <small className="fa fa-star text-primary"></small>
-                                    </div>
-                                </div>
-                                <div className="d-flex mb-3">
-                                    <small className="border-end me-3 pe-3"><i className="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                                    <small className="border-end me-3 pe-3"><i className="fa fa-bath text-primary me-2"></i>2 Bath</small>
-                                    <small><i className="fa fa-wifi text-primary me-2"></i>Wifi</small>
-                                </div>
-                                <p className="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                                <div className="d-flex justify-content-between">
-                                    <Link className="btn btn-sm btn-primary rounded py-2 px-4" href="/rooms/1">View Detail</Link>
-                                    <Link className="btn btn-sm btn-dark rounded py-2 px-4" href="/rooms/1">Book Now</Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {rooms}
                 </div>
             </div>
         </div>
@@ -1779,8 +1690,12 @@ export function Teams(){
                                 </div>
                             </div>
                             <div className="text-center p-4 mt-3">
-                                <h5 className="fw-bold mb-0">Full Name</h5>
-                                <small>Designation</small>
+                                <h5 className="fw-bold mb-0">
+                                    DERICK BRIEN
+                                </h5>
+                                <small>
+                                    Team Professional at Hotelier Palace New Delhi
+                                </small>
                             </div>
                         </div>
                     </div>
@@ -1795,8 +1710,12 @@ export function Teams(){
                                 </div>
                             </div>
                             <div className="text-center p-4 mt-3">
-                                <h5 className="fw-bold mb-0">Full Name</h5>
-                                <small>Designation</small>
+                                <h5 className="fw-bold mb-0">
+                                    Parthajyoti
+                                </h5>
+                                <small>
+                                    Guest service associate at Hotelier Skyline, Ahmedabad
+                                </small>
                             </div>
                         </div>
                     </div>
@@ -1811,8 +1730,12 @@ export function Teams(){
                                 </div>
                             </div>
                             <div className="text-center p-4 mt-3">
-                                <h5 className="fw-bold mb-0">Full Name</h5>
-                                <small>Designation</small>
+                                <h5 className="fw-bold mb-0">
+                                    Prakash Chand
+                                </h5>
+                                <small>
+                                    Director of Human Resources at Taj Skyline Ahmedabad
+                                </small>
                             </div>
                         </div>
                     </div>
@@ -1827,8 +1750,12 @@ export function Teams(){
                                 </div>
                             </div>
                             <div className="text-center p-4 mt-3">
-                                <h5 className="fw-bold mb-0">Full Name</h5>
-                                <small>Designation</small>
+                                <h5 className="fw-bold mb-0">
+                                    Shaleena Singh
+                                </h5>
+                                <small>
+                                    Human Resources Manager at Taj Amer, Jaipur
+                                </small>
                             </div>
                         </div>
                     </div>
