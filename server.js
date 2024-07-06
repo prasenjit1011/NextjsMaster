@@ -6,7 +6,7 @@ const dev = true
 const hostname = 'localhost'
 const port = 3001
 // when using middleware `hostname` and `port` must be provided below
-const app = next({ dev, hostname, port })
+const app = next({ dev })
 const handle = app.getRequestHandler()
  
 
