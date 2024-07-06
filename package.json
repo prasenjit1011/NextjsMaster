@@ -3,14 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "server": "node --watch server.js",
-    "dev": "next dev",    
-    "defaultstart": "next start",
-    "start": "node server.js",
-    "build:server": "tsc --project tsconfig.server.json",
-    "build:next": "next build",
-    "build": "npm run build:next && npm run build:server",
-    "start:prod": "node dist/server/index.js",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {

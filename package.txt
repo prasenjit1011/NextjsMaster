@@ -9,6 +9,18 @@
     "defaultstart": "next start",
     "start": "node server.js",
     "lint": "next lint"
+
+
+    "server": "node --watch server.js",
+    "dev": "next dev",    
+    "defaultstart": "next start",
+    "start": "node server.js",
+    "build:server": "tsc --project tsconfig.server.json",
+    "build:next": "next build",
+    "build": "npm run build:next && npm run build:server",
+    "start:prod": "node dist/server/index.js",
+    "lint": "next lint"
+
   },
   "dependencies": {
     "react": "^18",
