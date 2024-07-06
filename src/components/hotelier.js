@@ -488,15 +488,6 @@ export function Gallery(){
 }
 
 
-
-
-
-
-
-
-
-
-
 export function RoomDetails({room}){
     return (
         <>
@@ -1170,23 +1161,9 @@ export function Facility(){
     );
 }
 
-export function FacilityDetails(){
+function WhychooseUs(){
     return (
-        <div className="container-xxl py-5">
-            <div className="container">
-            <div className="row g-5">
-            <div className="col-lg-6 pt-4" style={{minHeight: "350px"}}>
-            <div className="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
-            <img className="position-absolute img-fluid w-100 h-100 rounded" src="/hotelier/img/feature.jpg" style={{objectFit: "cover"}} alt="" />
-            <div className="bg-white border p-1 position-absolute top-0 end-0 mt-n4 me-n4">
-            <div className="border py-4 px-5">
-            <h1 className="display-4 text-primary mb-0">15 <span className="fs-4 text-dark">Years</span></h1>
-            <h4>Experience</h4>
-            </div>
-            </div>
-            </div>
-            </div>
-            <div className="col-lg-6">
+        <div className="col-lg-6">
             <h6 className="section-title text-start text-primary text-uppercase">Features</h6>
             <h1 className="mb-4">Why <span className="text-primary text-uppercase">Choose</span> Us</h1>
             <p className="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
@@ -1231,8 +1208,81 @@ export function FacilityDetails(){
             </div>
             </div>
             </div>
+        </div>
+    );
+}
+
+function Expertise(){
+    return (
+        <div className="col-lg-6 pt-4" style={{minHeight: "350px"}}>
+            <div className="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
+                <img className="position-absolute img-fluid w-100 h-100 rounded" src="/hotelier/img/feature.jpg" style={{objectFit: "cover"}} alt="" />
+                <div className="bg-white border p-1 position-absolute top-0 end-0 mt-n4 me-n4">
+                    <div className="border py-4 px-5">
+                        <h1 className="display-4 text-primary mb-0">
+                            15 <span className="fs-4 text-dark">Years</span>
+                        </h1>
+                        <h4>Experience</h4>
+                    </div>
+                </div>
             </div>
+        </div>
+    );
+}
+
+export function FacilityDetails(){
+    return (
+        <div className="container-xxl py-5">
+            <div className="container">
+                <div className="row g-5">
+                    <Expertise />
+                    <WhychooseUs />
+                </div>
             </div>
+        </div>
+    );
+}
+
+
+function LoginFrm(){
+    
+
+    return (
+        <div className="col-md-6">
+            <div className="wow fadeInUp" data-wow-delay="0.2s">
+                <form>
+                    <div className="row g-3">
+                        <div className="col-md-12">
+                            <div className="form-floating">
+                                <input type="text" className="form-control" id="name" placeholder="Your Name" />
+                                <label for="name">User Name / Email Id</label>
+                            </div>
+                        </div>
+                        <div className="col-md-12">
+                            <div className="form-floating">
+                                <input type="email" className="form-control" id="email" placeholder="Your Email" />
+                                <label for="email">Password</label>
+                            </div>
+                        </div>
+                        <div className="col-12">
+                            <button className="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    );
+}
+
+
+export function Login(){
+    return (
+        <div className="container-xxl py-5">
+            <div className="container">
+                <div className="row g-5">
+                    <Expertise />
+                    <LoginFrm />
+                </div>
             </div>
         </div>
     );
@@ -1352,7 +1402,7 @@ export function Header(){
                                 <Link href="/faqs" className="nav-item nav-link">Faqs</Link>
                                 <Link href="/contact" className="nav-item nav-link">Contact</Link>
                             </div>
-                            <Link href="/login" className="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Login<i className="fa fa-arrow-right ms-3"></i></Link>
+                            <Link href="/auth/login" className="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Login<i className="fa fa-arrow-right ms-3"></i></Link>
                         </div>
                     </nav>
                 </div>
