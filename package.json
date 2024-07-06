@@ -6,7 +6,8 @@
     "server": "node --watch server.js",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "defaultstart": "next start",
+    "start": "node server.js",
     "lint": "next lint"
   },
   "dependencies": {
