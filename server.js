@@ -3,7 +3,7 @@ const { parse } = require('url')
 const next = require('next')
  
 const dev = true 
-const hostname = 'localhost'
+//const hostname = 'localhost'
 const port = 3001
 // when using middleware `hostname` and `port` must be provided below
 const app = next({ dev })
@@ -50,6 +50,6 @@ app.prepare().then(() => {
         process.exit(1)
     })
     .listen(port, () => {
-        console.log(`> Ready on http://${hostname}:${port}`)
+        console.log(`> to open `)
     })
 })

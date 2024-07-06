@@ -1357,9 +1357,9 @@ export function Header(){
                                 <Link href="/our-team" className="nav-item nav-link">Our Team</Link>
                                 <Link href="/gallery" className="nav-item nav-link">Gallery</Link>
                                 <Link href="/faqs" className="nav-item nav-link">Faqs</Link>
-                                <Link href="/contact-us" className="nav-item nav-link">Contact</Link>
+                                <Link href="/userform/contactus" className="nav-item nav-link">Contact</Link>
                             </div>
-                            <Link href="/login" className="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Login<i className="fa fa-arrow-right ms-3"></i></Link>
+                            <Link href="/userform/login" className="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Login<i className="fa fa-arrow-right ms-3"></i></Link>
                         </div>
                     </nav>
                 </div>
