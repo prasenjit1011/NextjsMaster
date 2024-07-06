@@ -761,7 +761,7 @@ accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed eirmod</p>
 
 export function Contactus(){
     return (
-<div className="container-xxl py-5">
+        <div className="container-xxl py-5">
             <div className="container">
                 <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h6 className="section-title text-center text-primary text-uppercase">Contact Us</h6>
@@ -1212,7 +1212,7 @@ function WhychooseUs(){
     );
 }
 
-function Expertise(){
+export function Expertise(){
     return (
         <div className="col-lg-6 pt-4" style={{minHeight: "350px"}}>
             <div className="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
@@ -1244,49 +1244,6 @@ export function FacilityDetails(){
 }
 
 
-function LoginFrm(){
-    
-
-    return (
-        <div className="col-md-6">
-            <div className="wow fadeInUp" data-wow-delay="0.2s">
-                <form>
-                    <div className="row g-3">
-                        <div className="col-md-12">
-                            <div className="form-floating">
-                                <input type="text" className="form-control" id="name" placeholder="Your Name" />
-                                <label for="name">User Name / Email Id</label>
-                            </div>
-                        </div>
-                        <div className="col-md-12">
-                            <div className="form-floating">
-                                <input type="email" className="form-control" id="email" placeholder="Your Email" />
-                                <label for="email">Password</label>
-                            </div>
-                        </div>
-                        <div className="col-12">
-                            <button className="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    );
-}
-
-
-export function Login(){
-    return (
-        <div className="container-xxl py-5">
-            <div className="container">
-                <div className="row g-5">
-                    <Expertise />
-                    <LoginFrm />
-                </div>
-            </div>
-        </div>
-    );
-}
 
 
 export function AboutusContentNR(){
@@ -1400,9 +1357,9 @@ export function Header(){
                                 <Link href="/our-team" className="nav-item nav-link">Our Team</Link>
                                 <Link href="/gallery" className="nav-item nav-link">Gallery</Link>
                                 <Link href="/faqs" className="nav-item nav-link">Faqs</Link>
-                                <Link href="/contact" className="nav-item nav-link">Contact</Link>
+                                <Link href="/contact-us" className="nav-item nav-link">Contact</Link>
                             </div>
-                            <Link href="/auth/login" className="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Login<i className="fa fa-arrow-right ms-3"></i></Link>
+                            <Link href="/login" className="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Login<i className="fa fa-arrow-right ms-3"></i></Link>
                         </div>
                     </nav>
                 </div>
@@ -1817,24 +1774,26 @@ export function Teams(){
 }
 
 
-export function NewsLetter(){
-    return (
-        <div className="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div className="row justify-content-center">
-                <div className="col-lg-10 border rounded p-1">
-                    <div className="border rounded text-center p-1">
-                        <div className="bg-white rounded text-center p-5">
-                            <h4 className="mb-4">Subscribe Our <span className="text-primary text-uppercase">Newsletter</span></h4>
-                            <div className="position-relative mx-auto" style={{maxWidth: "400px"}}>
-                                <input className="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email" />
-                                <button type="button" className="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
+export function NewsLetter({visibleFrm}){
+    console.log(' visibleFrm : '+visibleFrm);
+    
+        return (
+            <div className="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s">
+                <div className="row justify-content-center">
+                    <div className="col-lg-10 border rounded p-1">
+                        <div className="border rounded text-center p-1">
+                            <div className="bg-white rounded text-center p-5">
+                                <h4 className="mb-4">Subscribe Our <span className="text-primary text-uppercase">Newsletter</span></h4>
+                                <div className="position-relative mx-auto" style={{maxWidth: "400px"}}>
+                                    <input className="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email" />
+                                    <button type="button" className="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    );
+        );
 }
 
 

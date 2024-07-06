@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
             
             <div class="container-xxl bg-white p-0">
                 <Header />
-                {children}                
+                {children}
                 <Footer />
                 <BackToTopBtn />
             </div>
