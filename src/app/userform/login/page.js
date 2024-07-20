@@ -13,9 +13,25 @@ export default function LoginFrm(){
         setFormData((prevState) => ({ ...prevState, [name]: value }));
     };
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
         console.log(formData);
+
+        console.log('-: Call API :-');
+        //const formData = new FormData(formData)
+        const response = await fetch('http://localhost:3000/auth', {
+          method: 'POST',
+          body: {'username':'Sanjay', 'password':'Hello'}
+          //body: formData,
+        })
+     
+        // Handle response if necessary
+        const data = await response.json()
+
+        console.log('-: API Data :-',data);
+
+
+
     };
 
     return (
