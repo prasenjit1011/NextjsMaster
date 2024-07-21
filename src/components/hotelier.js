@@ -1316,7 +1316,7 @@ export function Header(){
             <div className="row gx-0">
                 <div className="col-lg-3 bg-dark d-none d-lg-block">
                     <Link href="/" className="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                        <img src="/hotelier/logo/hotelier.png" width="70%" height="50%" />
+                        <img src="/hotelier/logo/tulip01.png" width="70%" height="50%" />
                     </Link>
                 </div>
                 <div className="col-lg-9">

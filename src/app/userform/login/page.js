@@ -1,8 +1,9 @@
 'use client';
 import { useState } from "react";
-
+import { redirect } from "next/navigation";
 
 export default function LoginFrm(){
+    
     const [formData, setFormData] = useState({
         username: "",
         password: "",
@@ -15,25 +16,41 @@ export default function LoginFrm(){
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        console.log(formData);
 
-        console.log('-: Call API :-');
-        //const formData = new FormData(formData)
+        return [
+            {
+              source: '/',
+              destination: '/welcome',
+              permanent: true,
+            },
+          ]
+
+
         const response = await fetch('http://localhost:3000/auth', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify(formData),
-        })
-     
-        // Handle response if necessary
+        });
+
         const data = await response.json()
 
-        console.log('-: API Data :-',data);
+        if(response?.status == 500){
+            alert(data.message);
+            return;
+        }
 
+        if(response?.status == 200 && data?.access_token){
+            alert("Successfully login!");
 
-
+            localStorage.setItem('token', data?.access_token);
+            localStorage.setItem('userdata', JSON.stringify(data));
+            return redirect('/service');
+        }
+        else{
+            alert('Eoor occured');
+        }
     };
 
     return (
