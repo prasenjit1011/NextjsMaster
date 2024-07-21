@@ -21,8 +21,10 @@ export default function LoginFrm(){
         //const formData = new FormData(formData)
         const response = await fetch('http://localhost:3000/auth', {
           method: 'POST',
-          body: {'username':'Sanjay', 'password':'Hello'}
-          //body: formData,
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
         })
      
         // Handle response if necessary
@@ -52,7 +54,9 @@ export default function LoginFrm(){
                             </div>
                         </div>
                         <div className="col-12">
-                            <button className="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                            <button className="btn btn-primary w-100 py-3" type="submit">
+                                Login
+                            </button>
                         </div>
                     </div>
                 </form>
