@@ -11,7 +11,17 @@ export class User {
 
 
     @ManyToMany(()=>Property, (property)=>property.likedBy)
-    @JoinTable({name:'tbl_user_property'})
+    @JoinTable({
+        name:'tbl_user_property',
+        joinColumn: {
+            name: 'userId',
+            referencedColumnName: 'id',
+        },
+        inverseJoinColumn: {
+            name: 'propertyId',
+            referencedColumnName: 'id',
+        },
+    })
     likedProperties:Property[];
 
 }

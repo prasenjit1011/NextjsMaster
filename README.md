@@ -73,10 +73,12 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 Nest is [MIT licensed](LICENSE).
 
 
+git reset --soft HEAD~1
 
 npm install @nestjs/typeorm typeorm mysql2
 npm install class-validator class-transformer
 nest g resource user
+
 "generateOptions": {
     "spec": false
 },

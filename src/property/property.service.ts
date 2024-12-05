@@ -17,7 +17,8 @@ export class PropertyService {
   }
 
   async findAll() {
-    let data = await this.propertyRepository.find();
+    let cond = {relations:['likedBy']};
+    let data = await this.propertyRepository.find(cond);
     return {msg:`This action returns all property`, data};
   }
 

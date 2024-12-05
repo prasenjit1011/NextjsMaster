@@ -1,7 +1,9 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+
 import { UserService } from './user.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
+import { LikeDataDto } from './dto/likedata.dto';
 
 @Controller('user')
 export class UserController {
@@ -30,5 +32,11 @@ export class UserController {
   @Delete(':id')
   remove(@Param('id') id: string) {
     return this.userService.remove(+id);
+  }
+
+  @Post('like/property')
+  addLikePropertyToUser(@Body() likeData: LikeDataDto) {
+    console.log('Like Data', likeData);
+    return this.userService.addLikePropertyToUser(likeData);
   }
 }
