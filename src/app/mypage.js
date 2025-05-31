@@ -6,10 +6,10 @@ export default function Home() {
     <main className={styles.main}>
         <Image
           className={styles.logo}
-          src="/next.svg"
+          src={"https://fastly.picsum.photos/id/78/200/200.jpg?hmac=P2qNtvmWActric-MfeYNdsN7YuChCioX-9CkJMNUYpk"}
           alt="Next.js Logo"
-          width={180}
-          height={37}
+          width={200}
+          height={150}
           priority
         />
     </main>
