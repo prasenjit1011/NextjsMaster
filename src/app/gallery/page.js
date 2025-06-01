@@ -7,10 +7,6 @@ export default function GalleryPage(){
         <>
             <Gallery />
             <NewsLetter />
-        </>
-        
-    )
-    
-    
-    ;
+        </>   
+    );
 }
