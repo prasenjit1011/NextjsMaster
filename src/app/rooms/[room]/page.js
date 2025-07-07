@@ -1,22 +1,30 @@
-import { Banner, BannerAboutus, BannerRooms } from "@/components/banner";
-import { AboutusContent, BookRoom, Booking, BookingFrm, Facility, FacilityDetails, NewRoomsList, NewsLetter, Room, RoomDetails, RoomsList, RoomsListPage, Teams } from "@/components/hotelier";
-import Image from "next/image";
+// app/rooms/[room]/page.tsx or page.js (for App Router)
+// or pages/rooms/[room].js (for Pages Router)
 
-export default function Rooms({room}){
-    console.log('Room : '+room);
+import dynamic from 'next/dynamic';
+import { Banner } from "@/components/banner";
+import {RoomDetails, Booking, BookingFrm, Room, NewsLetter} from "@/components/hotelier";
 
-    return (
-        <>
-            <Banner title="Our Rooms" />
-            <Booking />
-            <RoomDetails room={room} />
-            <BookingFrm />
-            <Room />
-            <NewsLetter />
-        </>
-        
-    )
-    
-    
-    ;
+// 👇 Optional: If data needs to be fetched
+export async function generateStaticParams() {
+  return [
+    { room: 'deluxe' },
+    { room: 'suite' },
+    { room: 'standard' },
+  ];
+}
+
+export default function RoomPage({ params }) {
+  const { room } = params;
+
+  return (
+    <>
+      <Banner title="Our Rooms" />
+      <Booking />
+      <RoomDetails room={room} />
+      <BookingFrm />
+      <Room />
+      <NewsLetter />
+    </>
+  );
 }
