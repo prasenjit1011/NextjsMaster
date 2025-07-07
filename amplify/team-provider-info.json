@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "eshopd78e4460": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d20q9q4vhu6no5",
+          "type": "manual"
+        }
       }
     }
   }
